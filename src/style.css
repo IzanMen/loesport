@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER GLOBAL */
+
+.header {
+    padding: 0 12%;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__nav {
+    flex-grow: 1;
+}
+
+.header__nav__list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__nav__list-item a{
+    text-decoration: none;
+    color: #000;
+}
