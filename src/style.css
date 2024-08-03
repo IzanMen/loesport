@@ -59,9 +59,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
+    position: relative;
+    transition: color .3;
 }
 
-/* HEADER GLOBAL -- ANIMACIÓN NAVEGACIÓN */
+/* HEADER GLOBAL -- ANIMACIÓN NAVEGACIÓN -- ANIMACIÓN BOTÓN*/
 
 .header__nav__list-item a::after {
     content: '';
@@ -74,6 +78,7 @@
 
     width: 0;
     height: 3px;
+    border-radius: 0 0 10px 10px;
 
     background-color: #000; 
 
@@ -86,4 +91,30 @@
 
 .header__nav__list-item .active::after {
     width: 100%;
+}
+
+.header__button::after {
+    content: "";
+    z-index: -1;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 30%;
+
+    background-color: rgb(25, 25, 130);
+
+    position: absolute;
+    bottom: -200px;
+    left: -150px;
+
+    transition: all .3s linear;
+}
+
+.header__button:hover::after {
+    bottom: -10px;
+    left: -50px;
+}
+
+.header__button:hover {
+    color: #fff;
 }
