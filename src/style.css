@@ -83,3 +83,7 @@
 .header__nav__list-item:hover a::after {
     width: 100%;
 }
+
+.header__nav__list-item .active::after {
+    width: 100%;
+}
