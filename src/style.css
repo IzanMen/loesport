@@ -10,11 +10,12 @@
     padding: 0 12%;
     height: 70px;
     width: 100%;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #bbb;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
 }
 
 .header__logo {
@@ -27,12 +28,26 @@
 
 .header__nav__list {
     list-style: none;
-    display: flex;
     width: 100%;
+
+    display: flex;
     justify-content: space-between;
 }
 
 .header__nav__list-item a{
     text-decoration: none;
     color: #000;
+}
+
+.header__button {
+    text-decoration: none;
+    color: #000;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
