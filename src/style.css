@@ -10,7 +10,7 @@
     padding: 0 12%;
     height: 70px;
     width: 100%;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ddd;
 
     display: flex;
     justify-content: space-between;
@@ -32,11 +32,20 @@
 
     display: flex;
     justify-content: space-between;
+
+    position: relative;
+}
+
+.header__nav__list-item {
+    position: relative;
 }
 
 .header__nav__list-item a{
     text-decoration: none;
     color: #000;
+
+    display: block;
+    padding: 29px 0;
 }
 
 .header__button {
@@ -50,4 +59,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* HEADER GLOBAL -- ANIMACIÓN NAVEGACIÓN */
+
+.header__nav__list-item a::after {
+    content: '';
+    position: absolute;
+    margin: auto;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 0;
+    height: 3px;
+
+    background-color: #000; 
+
+    transition: width .3s;
+}
+
+.header__nav__list-item:hover a::after {
+    width: 100%;
 }
