@@ -123,12 +123,12 @@
 /* FOOTER GLOBAL */
 
 .footer {
-    height: 325px;
+    min-height: 325px;
     width: 100%;
     background-color: #000;
     color: #ddd;
     border-radius: 50px 50px 0 0;
-    padding: 75px 75px 50px 75px;
+    padding: 75px 12% 50px 12%;
     text-align: center;
     font-size: .8rem;
 
@@ -136,7 +136,7 @@
     bottom: 0;
 
     display: grid;
-    grid-template-columns: 200px 400px 1fr 200px 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 120px; 
     grid-template-areas: 
         "footer-logo footer-nav footer-institutions footer-contact footer-social"
@@ -151,7 +151,7 @@
 
 .--footer-logo {
     grid-area: footer-logo;
-    padding: 0 25px;
+    padding-right: 25px;
 
     width: 200px;
     justify-self: center;
@@ -233,7 +233,7 @@
 
 .--footer-social {
     grid-area: footer-social;
-    padding: 0 25px;
+    padding-left: 25px;
     border-left: 1px solid #111;
 }
 
@@ -246,7 +246,6 @@
 
 .--footer-legal {
     grid-area: footer-legal;
-    padding: 0 25px;
     margin-top: 50px;
     border-top: 1px solid #111;
 
