@@ -12,4 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// ____________________________________________________________________________
+// Menú desplegable en versión móvil
+
+const navigation = document.querySelector(".header__nav__list");
+
+document.querySelector(".header__nav-menu").addEventListener("click", (e) => {
+    navigation.classList.toggle("navigation-active");
+});
+
+
+
