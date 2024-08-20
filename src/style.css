@@ -389,3 +389,33 @@ h1, h2, h3 {
         width: 150px;
     }
 }
+
+@media screen and (max-width: 1020px) {
+    .footer__content {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, auto); 
+        grid-template-areas: 
+            "footer-logo"
+            "footer-nav"
+            "footer-institutions"
+            "footer-contact"
+            "footer-social"
+            "footer-legal";
+        gap: 30px;
+    }
+
+    .--footer-nav, 
+    .--footer-institutions, 
+    .--footer-contact, 
+    .--footer-social {
+        border-left: none;
+        border-bottom: 1px solid #111;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .footer__content > * {
+        text-align: center; /* Centra el contenido en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+}
