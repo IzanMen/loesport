@@ -21,7 +21,7 @@ h1, h2, h3 {
     --black: #010101;
     --yellow: #f5f51b;
     --blue: #e3f2f5;
-    --red: #fff02d;
+    --red: #fff0d2;
 
     --text: 1rem;
     --title: 2rem;
@@ -31,18 +31,12 @@ h1, h2, h3 {
 /* HEADER GLOBAL */
 
 .header {
-    padding: 0 12%;
     height: 70px;
     width: 100%;
     text-align: center;
     font-size: .8rem;
     border-bottom: 1px solid #ddd;
     color: #000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
 }
 
 .header__logo {
@@ -50,7 +44,14 @@ h1, h2, h3 {
 }
 
 .header__nav {
-    flex-grow: 1;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
 }
 
 .header__nav__list {
@@ -78,7 +79,7 @@ h1, h2, h3 {
 .header__button {
     text-decoration: none;
     color: inherit;
-    width: 120px;
+    width: 170px;
     height: 35px;
     border: 1px solid #000;
     border-radius: 20px;
@@ -95,15 +96,18 @@ h1, h2, h3 {
 /* HEADER GLOBAL -- MEDIA QUERIES*/
 
 @media screen and (max-width: 1450px) {
-    .header {
+    .header__nav {
         gap: 50px;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .header {
-        padding: 0 7%;
+    .header__nav {
         gap: 35px;
+    }
+
+    .header__logo  {
+        width: 120px;
     }
 }
 
@@ -167,13 +171,19 @@ h1, h2, h3 {
     min-height: 325px;
     width: 100%;
     background-color: #000;
-    color: #ddd;
+    color: #fff;
     border-radius: 50px 50px 0 0;
     padding: 75px 12% 50px 12%;
     text-align: center;
-    font-size: .8rem;
+    font-size: .6rem;
+    font-weight: 200;
 
     margin-top: 50dvh;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -184,7 +194,8 @@ h1, h2, h3 {
 }
 
 .footer__section-title {
-    font-size: .9rem;
+    font-size: .7rem;
+    font-weight: 500;
     margin-bottom: 20px;
     color: #ddd;
 }
@@ -223,7 +234,7 @@ h1, h2, h3 {
     padding: 0 25px;
     border-left: 1px solid #111;
 
-    font-size: .6rem;
+    font-size: .5rem;
     text-align: center;
 }
 
@@ -316,9 +327,8 @@ h1, h2, h3 {
 
 /* FOOTER GLOBAL -- MEDIA QUERIES*/
 
-@media screen and (max-width: 1300px) {
-    .footer {
-        padding-left: 7%;
-        padding-right: 7%;
+@media screen and (max-width: 1200px) {
+    .--footer-logo {
+        width: 150px;
     }
 }
