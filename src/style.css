@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Epilogue';
 }
+
+h1, h2, h3 {
+    font-family: 'Unbounded';
+}
+
+/* VARIABLES */
+
+:root {
+    --white: #fff;
+    --black: #010101;
+    --yellow: #f5f51b;
+    --blue: #e3f2f5;
+    --red: #fff02d;
+
+    --text: 1rem;
+    --title: 2rem;
+    --subtitle: 1.7rem;
+}   
 
 /* HEADER GLOBAL */
 
@@ -11,6 +35,7 @@
     height: 70px;
     width: 100%;
     text-align: center;
+    font-size: .8rem;
     border-bottom: 1px solid #ddd;
     color: #000;
 
@@ -148,8 +173,7 @@
     text-align: center;
     font-size: .8rem;
 
-    position: absolute;
-    bottom: 0;
+    margin-top: 50dvh;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -169,7 +193,7 @@
     grid-area: footer-logo;
     padding-right: 25px;
 
-    width: 200px;
+    width: 220px;
     justify-self: center;
 }
 
