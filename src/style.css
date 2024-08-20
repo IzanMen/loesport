@@ -152,6 +152,7 @@ h1, h2, h3 {
 
         list-style: none;
         border-left: 1px solid #aaa;
+        box-shadow: 0 0 1000vh 1000vh #fff;
 
         flex-direction: column;
         justify-content: center;
@@ -160,10 +161,6 @@ h1, h2, h3 {
         background-color: #fff;
         height: 100dvh;
         width: 100vw;
-    }
-
-    .body-navigation-active {
-        max-height: 100dvh;
     }
 
     .navigation-active a::after {

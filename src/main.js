@@ -15,11 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Menú desplegable en versión móvil
 
 const navigation = document.querySelector(".header__nav__list");
-const body = document.querySelector("body")
 
 document.querySelector(".header__nav-menu").addEventListener("click", (e) => {
     navigation.classList.toggle("navigation-active");
-    body.classList.toggle("body-navigation-active")
 });
 
 
