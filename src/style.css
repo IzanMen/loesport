@@ -163,8 +163,7 @@ h1, h2, h3 {
     }
 
     .body-navigation-active {
-        height: 100dvh;
-        overflow: hidden;
+        max-height: 100dvh;
     }
 
     .navigation-active a::after {
