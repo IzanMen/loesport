@@ -145,12 +145,10 @@ h1, h2, h3 {
     }
 
     .navigation-active {
-        padding-top: 50px;
-
         display: flex;
         position: absolute;
-        right: 0;
         top: 0;
+        left: 0;
 
         list-style: none;
         border-left: 1px solid #aaa;
@@ -160,8 +158,13 @@ h1, h2, h3 {
         align-items: center;
 
         background-color: #fff;
-        height: 100vh;
-        width: 200px;
+        height: 100dvh;
+        width: 100vw;
+    }
+
+    .body-navigation-active {
+        height: 100dvh;
+        overflow: hidden;
     }
 
     .navigation-active a::after {
