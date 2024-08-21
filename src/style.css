@@ -157,11 +157,11 @@ p {
     }
 
     .header {
-        height: 100px;
+        height: 110px;
     }
 
     .header__nav {
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     .navigation-active {
