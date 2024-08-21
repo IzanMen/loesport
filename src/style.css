@@ -96,6 +96,10 @@ h1, h2, h3 {
     display: none;
 }
 
+.--item-mobile-menu {
+    display: none;
+}
+
 /* HEADER GLOBAL -- MEDIA QUERIES*/
 
 @media screen and (max-width: 1450px) {
@@ -115,6 +119,10 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 1025px) {
+    .--item-mobile-menu {
+        display: inline;
+    }
+    
     .header__button {
         display: none;
     }
@@ -401,21 +409,34 @@ h1, h2, h3 {
             "footer-contact"
             "footer-social"
             "footer-legal";
-        gap: 30px;
+        gap: 20px;
     }
 
     .--footer-nav, 
     .--footer-institutions, 
     .--footer-contact, 
-    .--footer-social {
+    .--footer-social,
+    .--footer-logo {
         border-left: none;
         border-bottom: 1px solid #111;
         padding: 0;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     .footer__content > * {
-        text-align: center; /* Centra el contenido en pantallas pequeñas */
-        margin-bottom: 20px;
+        text-align: center;
     }
+
+    .--footer-legal {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+        border: 0;
+
+        & div {
+            flex-direction: column;
+            gap: 12px
+        }
+    }
+
 }
