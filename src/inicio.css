@@ -27,6 +27,14 @@
         width: 130px;
 
         background-color: #262626;
+        position: relative;
+
+        & img{
+            position: absolute;
+            width: 120px;
+            top: -20px;
+            right: 0;
+        }
     }
 
     & .index-header__column-1__button {
@@ -141,8 +149,16 @@
     padding: 10px 15px;
 
     position: relative;
+    overflow: hidden;
 
     background-color: var(--yellow);
+
+    & img {
+        width: 85px;
+        position: absolute;
+        top: 28px;
+        left: 50px;
+    }
 }
 
 .index-header__column-3__background-image-2 {
@@ -150,6 +166,10 @@
     height: 90px;
 
     background-color: var(--blue);
+
+    & img {
+        width: 150px;
+    }
 }
 
 .index-header__column-3__background-image-1__title {
