@@ -2,12 +2,11 @@
 
 .index-header {
     width: 100%;
-    padding: 120px 0;
+    padding: 100px 0;
     padding-top: 70px;
     margin: auto;
 
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
 
     width: 80%;
     max-width: 1200px;
@@ -20,7 +19,6 @@
 .index-header__column-1 {
     display: flex;
     flex-direction: column;
-
     gap: 15px;
 
     & .index-header__column-1__background-image {
@@ -186,4 +184,114 @@
     position: absolute;
     bottom: 10px;
     left: 15px;
+}
+
+/* HEADER -- MEDIA QUERIES*/
+
+@media screen and (max-width: 1025px) {
+    .index-header__column-1__social {
+        top: 450px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .index-header {
+        flex-direction: column;
+        margin: auto;
+
+        padding-bottom: 200px;
+    }
+
+    .index-header__column-1__background-image {
+        display: none;
+    }
+
+    .index-header__column-1__social {
+        flex-wrap: wrap;
+        width: 100px;
+
+        justify-content: center;
+
+        & .index-header__column-1__social-line {
+            display: none;
+        }
+    }
+
+    .index-header__column-1__social {
+        top: 670px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .index-header__column-1__button {
+        position: absolute;
+        top: 610px;
+        
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .index-header__column-2__buttons {
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .index-header__column-3__background-image-2 {
+        display: none;
+    }
+
+    .index-header__column-3 {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 457px) {
+    .index-header {
+        padding-bottom: 100;
+    }
+
+    .index-header__column-1__social {
+        top: 700px;
+    }
+
+    .index-header__column-1__button {
+        top: 640px;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    .index-header__column-1__button {
+        top: 660px;
+    }
+
+    .index-header__column-1__social {
+        top: 720px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .index-header {
+        padding-bottom: 100;
+    }
+
+    .index-header__column-1__social {
+        top: 750px;
+    }
+
+    .index-header__column-1__button {
+        top: 700px;
+    }
+}
+
+@media screen and (max-width: 284px) {
+    .index-header__column-1__social {
+        top: 790px;
+    }
+
+    .index-header__column-1__button {
+        top: 740px;
+    }
 }
