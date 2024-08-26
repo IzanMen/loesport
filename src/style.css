@@ -23,9 +23,20 @@ h2 {
     font-size: 1.7rem;
 }
 
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff8;
+}
+
 p {
     font-size: .9rem;
     text-wrap: pretty;
+    line-height: 20px;
+}
+
+svg {
+    width: 15px;
 }
 
 /* VARIABLES */
@@ -262,6 +273,7 @@ p {
     text-align: center;
     font-size: .6rem;
     font-weight: 200;
+    margin-top: 100px;
 }
 
 .footer__content {
