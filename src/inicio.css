@@ -401,11 +401,39 @@
     & div {
         background-color: #fff1;
         width: 48%;
-        height: 100px;
+        height: 130px;
         overflow: hidden;
+        padding: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         & img {
-            width: 150px;
+            height: 50px;
+        }
+
+        & a {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #555;
+            border-radius: 50%;
+            background-color: #0003;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    & :first-child {
+        
+        & img {
+            height: 80px;
+        }
+
+        & a {
+            background-color: #fff;
         }
     }
 }
