@@ -33,10 +33,6 @@ p {
 :root {
     --yellow: #f5f51b;
     --blue: #e3f2f5;
-
-    --text: 1rem;
-    --title: 2rem;
-    --subtitle: 1.7rem;
 }   
 
 /* HEADER GLOBAL */
