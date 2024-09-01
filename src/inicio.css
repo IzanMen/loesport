@@ -485,7 +485,12 @@
 
 @media screen and (max-width: 555px) {
     .index-historia-patrocinadores__patrocinadores-targetas div {
-        gap: 10px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .index-historia-patrocinadores__patrocinadores-targetas img {
@@ -497,13 +502,4 @@
     }
 }
 
-@media screen and (max-width: 360px) {
-    .index-historia-patrocinadores__patrocinadores-targetas div h6 {
-        font-size: .6rem;
-    }
 
-    .index-historia-patrocinadores__patrocinadores-targetas div a {
-        width: 20px;
-        height: 20px;
-    }
-}
