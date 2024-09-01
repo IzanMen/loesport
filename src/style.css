@@ -128,13 +128,13 @@ svg {
 
 @media screen and (max-width: 1450px) {
     .header__nav {
-        gap: 50px;
+        gap: 90px;
     }
 }
 
 @media screen and (max-width: 1300px) {
     .header__nav {
-        gap: 35px;
+        gap: 60px;
     }
 
     .header__logo  {
