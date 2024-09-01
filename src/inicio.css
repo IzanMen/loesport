@@ -502,4 +502,131 @@
     }
 }
 
+/* SECTION 3 */
 
+.index-gestiones {
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+    padding: 100px 0;
+}
+
+.index-gestiones h4, .index-gestiones h2 {
+    text-align: center;
+}
+
+.index-gestiones h4 {
+    color: #0008;
+}
+
+.index-gestiones__sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.index-gestiones__sections-1 {
+    background-color: var(--red);
+    padding: 30px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 400px;
+}
+
+.index-gestiones__sections-1 p {
+    color: #000a;
+}
+
+.index-gestiones__sections-1 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: .7rem;
+    background-color: #000;
+    width: fit-content;
+
+    position: absolute;
+    bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.index-gestiones__sections-2 {
+    background-color: var(--blue);
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: calc(100% - 400px - 20px);
+}
+
+.index-gestiones__sections-2 p {
+    color: #000a;
+}
+
+.index-gestiones__sections-2__variaciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.index-gestiones__sections-2__variaciones-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #fff;
+    height: 100px;
+    padding: 20px;
+    padding-bottom: 15px;
+    text-wrap: wrap;
+}
+
+.index-gestiones__sections-2__variaciones-item svg {
+    width: 30px;
+    align-self: start;
+}
+
+.index-gestiones__sections-2__variaciones-item p {
+    align-self: start;
+    color: #000;
+    font-weight: 500;
+}
+
+.index-gestiones__sections-2__variaciones-item a {
+    align-self: end;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-gestiones__sections-2__variaciones-item a svg {
+    height: 100%;
+    width: 100%;
+
+    width: 20px;
+}
+
+.index-gestiones__sections-2__variaciones-item--2 a {
+    background-color: #000;
+}
