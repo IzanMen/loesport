@@ -74,7 +74,7 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 120px;
 }
 
 .header__nav__list {
@@ -102,7 +102,7 @@ svg {
 .header__button {
     text-decoration: none;
     color: inherit;
-    width: 170px;
+    width: 200px;
     height: 35px;
     border: 1px solid #000;
     border-radius: 20px;
@@ -276,7 +276,7 @@ svg {
     border-radius: 50px 50px 0 0;
     padding: 75px 12% 50px 12%;
     text-align: center;
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: 200;
     margin-top: 100px;
 }
@@ -294,7 +294,7 @@ svg {
 }
 
 .footer__section-title {
-    font-size: .7rem;
+    font-size: inherit;
     font-weight: 500;
     margin-bottom: 20px;
     color: #ddd;
@@ -335,8 +335,9 @@ svg {
     border-left: 1px solid #111;
 
     & p {
-        font-size: .5rem;
+        font-size: .7rem;
         text-align: center;
+        line-height: 12px;
     }
 }
 
@@ -378,10 +379,6 @@ svg {
 
     display: flex;
     flex-direction: column;
-
-    & p {
-        font-size: .7rem;
-    }
 }
 
 .--footer-contact span {
@@ -418,11 +415,7 @@ svg {
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    & p {
-        font-size: .5rem;
-    }
+    align-items: center;    
 } 
 
 .--footer-legal div {
