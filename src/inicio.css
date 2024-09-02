@@ -47,6 +47,12 @@
     align-items: center;
     width: fit-content;
     padding: 5px 10px;
+
+    transition: transform .2s;
+}
+
+.index-header__column-1__button:hover {
+    transform: scale(1.05);
 }
 
 .index-header__column-1__button svg {
@@ -79,6 +85,24 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    position: relative;
+}
+
+.index-header__column-2__icon-1,
+.index-header__column-2__icon-2 {
+    position: absolute;
+    width: 70px;
+}
+
+.index-header__column-2__icon-1 {
+    top: 0;
+    right: -50px;
+}
+
+.index-header__column-2__icon-2 {
+    bottom: 30px;
+    left: -50px;
 }
 
 .index-header__column-2 p {
@@ -106,10 +130,15 @@
 .index-header__column-2__buttons-1 {
     background-color: #010101;
     color: var(--white);
+
+    transition: transform .2s;
+}
+
+.index-header__column-2__buttons-1:hover {
+    transform: scale(1.05);
 }
 
 .index-header__column-2__buttons-2 {
-    background-color: var(--white);
     text-decoration: underline;
 }
 
@@ -171,6 +200,12 @@
     position: absolute;
     bottom: 10px;
     left: 15px;
+
+    transition: transform .2s;
+}
+
+.index-header__column-3__background-image-1__icon:hover {
+    transform: scale(1.05);
 }
 
 /* HEADER -- MEDIA QUERIES */
@@ -350,6 +385,12 @@
     display: flex;
     align-items: center;
     gap: 3px;
+
+    transition: transform .2s;
+}
+
+.index-historia-patrocinadores__historia-contenido a:hover {
+    transform: scale(1.05);
 }
 
 .index-historia-patrocinadores__historia-contenido svg {
@@ -405,6 +446,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: transform .2s;
+}
+
+.index-historia-patrocinadores__patrocinadores-targetas a:hover {
+    transform: scale(1.05);
 }
 
 .index-historia-patrocinadores__patrocinadores-targetas :first-child img {
@@ -429,6 +476,12 @@
     gap: 3px;
     z-index: 1;
     margin: auto;
+
+    transition: transform .2s;
+}
+
+.index-historia-patrocinadores__patrocinadores-button:hover {
+    transform: scale(1.05);
 }
 
 .index-historia-patrocinadores__patrocinadores-button svg {
@@ -506,9 +559,6 @@
 /* SECTION 3 */
 
 .index-gestiones {
-    margin: auto;
-    width: 80%;
-    max-width: 1200px;
     padding: 100px 0;
 }
 
@@ -521,13 +571,16 @@
 }
 
 .index-gestiones__sections {
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 
     margin-top: 50px;
-    width: 100%;
 }
 
 .index-gestiones__sections-1 {
@@ -562,7 +615,13 @@
     display: flex;
     align-items: center;
     gap: 3px;
+
+    transition: transform .2s;
 }
+
+.index-gestiones__sections-1 a:hover {
+    transform: scale(1.05);
+}   
 
 .index-gestiones__sections-2 {
     background-color: var(--blue);
@@ -621,6 +680,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: transform .2s;
+}
+
+.index-gestiones__sections-2__variaciones-item a:hover {
+    transform: scale(1.05);
 }
 
 .index-gestiones__sections-2__variaciones-item a svg {
@@ -635,8 +700,12 @@
 }
 
 .index-gestiones__sections-3 {
-    background-color: var(--black);
+    margin: auto;
     width: 100%;
+    max-width: 1200px;
+    padding: 100px 0;
+
+    background-color: var(--black);
     min-height: 150px;
     padding: 30px;
     padding-left: 100px;
@@ -665,15 +734,17 @@
     width: 70%;
 
     line-height: 2rem;
+    font-family: 'Unbounded';
 }
 
 .index-gestiones__sections-3 a {
     color: var(--black);
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 100px;
     font-size: .9rem;
-    background-color: var(--white);
+    font-weight: 500;
+    background-color: #fff;
 
     display: flex;
     align-items: center;
@@ -681,6 +752,12 @@
     gap: 3px;
 
     width: fit-content;
+
+    transition: transform .2s;
+}
+
+.index-gestiones__sections-3 a:hover {
+    transform: scale(1.05);
 }
 
 /* SECTION 3 -- MEDIA QUERIES */
@@ -722,6 +799,8 @@
     .index-gestiones__sections-3 p {
         width: 100%;
         text-align: center;
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
 }
 
@@ -741,5 +820,152 @@
 
     .index-gestiones__sections-1 {
         min-height: 250px;
+    }
+}
+
+/* Section 3.2 */
+
+.index-gestiones__licencias {
+    background-color: var(--blue);
+    width: 100%;
+    padding: 100px 10%;
+    margin: 0;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-gestiones__licencias:first-child {
+    border-right: 1px solid #aaa;
+}
+
+.index-gestiones__licencias-item {
+    padding: 0 50px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.index-gestiones__licencias-item-1 {
+    border-right: 1px solid #0002;
+
+    width: 50%;
+}
+
+.index-gestiones__licencias-item-2 {
+    width: 50%;
+}
+
+.index-gestiones__licencias-item h6 {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.index-gestiones__licencias-item svg {
+    width: 30px;
+}
+
+.index-gestiones__licencias-item__content {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: top;
+
+    min-height: 70px;
+}
+
+.index-gestiones__licencias-item__content p {
+    color: #000a;
+}
+
+.index-gestiones__licencias-item__content span {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background-color: #fff;
+
+    margin-top: 10px;
+}
+
+.index-gestiones__licencias-item__content a {
+    color: var(--black);
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 100px;
+    height: 60px;
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform .2s;
+}
+
+.index-gestiones__licencias-item-2 .index-gestiones__licencias-item__content a {
+    background-color: var(--black);
+}
+
+.index-gestiones__licencias-item__content a:hover {
+    transform: scale(1.05);
+}
+
+/* Section 3.2 -- MEDIA QUERIES */
+
+@media screen and (max-width: 1140px) {
+    .index-gestiones__licencias {
+        margin-top: -10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10%;
+    }
+
+    .index-gestiones__licencias-item__icon {
+        width: 30px;
+        margin-bottom: -20px;
+    }
+
+    .index-gestiones__licencias-item {
+        padding: 50px 20px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .index-gestiones__licencias-item__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .index-gestiones__licencias-item__content a {
+        align-self: center;
+        justify-self: center;
+
+        padding: 10px;
+        height: 50px;
+    }
+
+    .index-gestiones__licencias-item p {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .index-gestiones__licencias-item-1 {
+        border: none;
+        border-bottom: 1px solid #0002;
+        width: 100%;
+    }
+
+    .index-gestiones__licencias-item-2 {
+        width: 100%;
     }
 }
