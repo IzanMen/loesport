@@ -49,7 +49,9 @@ svg {
 :root {
     --yellow: #f5f51b;
     --blue: #e3f2f5;
-    --red: #FFF0D2;
+    --red: #fff0d2;
+    --black: #0f0f0f;
+    --white: #fffd;
 }   
 
 /* HEADER GLOBAL */
@@ -59,7 +61,7 @@ svg {
     width: 100%;
     text-align: center;
     font-size: .8rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #0002;
     color: #000;
 }
 
@@ -105,7 +107,7 @@ svg {
     color: inherit;
     width: 200px;
     height: 35px;
-    border: 1px solid #000;
+    border: 1px solid var(--black);
     border-radius: 20px;
 
     display: flex;
@@ -177,7 +179,7 @@ svg {
         border: 1px solid #aaa;
 
         width: 50px;
-        z-index: 10001;
+        z-index: 1001;
     }
 
     .header {
@@ -197,13 +199,13 @@ svg {
 
         list-style: none;
         border-left: 1px solid #aaa;
-        box-shadow: 0 0 1000vh 1000vh #fff;
+        box-shadow: 0 0 1000vh 1000vh var(--white);
 
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        background-color: #fff;
+        background-color: var(--white);
         height: 100dvh;
         width: 100vw;
     }
@@ -228,7 +230,7 @@ svg {
     height: 3px;
     border-radius: 0 0 10px 10px;
 
-    background-color: #000; 
+    background-color: var(--black); 
 
     transition: width .3s;
 }
@@ -249,7 +251,7 @@ svg {
     width: 200px;
     border-radius: 30%;
 
-    background-color: #000;
+    background-color: var(--black);
 
     position: absolute;
     bottom: -200px;
@@ -264,7 +266,7 @@ svg {
 }
 
 .header__button:hover {
-    color: #fff;
+    color: var(--white);
 }
 
 /* FOOTER GLOBAL */
@@ -272,8 +274,8 @@ svg {
 .footer {
     min-height: 325px;
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 50px 50px 0 0;
     padding: 75px 12% 50px 12%;
     text-align: center;
