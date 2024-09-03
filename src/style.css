@@ -199,13 +199,13 @@ svg {
 
         list-style: none;
         border-left: 1px solid #aaa;
-        box-shadow: 0 0 1000vh 1000vh var(--white);
+        box-shadow: 0 0 100dvh 1000vh #fff;
 
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        background-color: var(--white);
+        background-color: #fff;
         height: 100dvh;
         width: 100vw;
     }

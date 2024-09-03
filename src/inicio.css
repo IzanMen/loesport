@@ -77,7 +77,7 @@
 }
 
 .index-header__column-1__social a svg {
-    width: 15px;
+    width: 20px;
 }
 
 .index-header__column-2 {
@@ -166,6 +166,7 @@
     overflow: hidden;
     background-color: var(--yellow);
     color: #000;
+    text-decoration: none;
 }
 
 .index-header__column-3__background-image-1 img {
@@ -213,6 +214,10 @@
 @media screen and (max-width: 1025px) {
     .index-header__column-1__social {
         top: 450px;
+    }
+
+    .index-header__column-2__icon {
+        display: none;
     }
 }
 
@@ -421,9 +426,11 @@
     flex-wrap: wrap;
 }
 
-.index-historia-patrocinadores__patrocinadores-targetas div {
+.index-historia-patrocinadores__patrocinadores-targetas a {
     background-color: #fff1;
+    color: #fff;
     backdrop-filter: blur(5px);
+    text-decoration: none;
     height: 100px;
     padding: 10px 20px;
     display: flex;
@@ -437,28 +444,28 @@
     height: 50px;
 }
 
-.index-historia-patrocinadores__patrocinadores-targetas a {
-    width: 30px;
-    height: 30px;
+.index-historia-patrocinadores__patrocinadores-targetas span {
+    width: 40px;
+    height: 40px;
     border: 1px solid #555;
     border-radius: 50%;
-    background-color: #0003;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: transform .2s;
+    transition: filter .2s;
 }
 
-.index-historia-patrocinadores__patrocinadores-targetas a:hover {
-    transform: scale(1.05);
+.index-historia-patrocinadores__patrocinadores-targetas span:hover {
+    filter: invert(1);
 }
 
 .index-historia-patrocinadores__patrocinadores-targetas :first-child img {
     height: 80px;
 }
 
-.index-historia-patrocinadores__patrocinadores-targetas :first-child a {
+.index-historia-patrocinadores__patrocinadores-targetas :first-child span {
     background-color: var(--white);
 }
 
@@ -528,31 +535,37 @@
         text-align: center;
     }
 
-    .index-historia-patrocinadores__historia-contenido a {
-        margin: auto;
-    }
-
     .index-historia-patrocinadores__historia img {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 555px) {
-    .index-historia-patrocinadores__patrocinadores-targetas div {
-        height: auto;
+    .index-historia-patrocinadores__patrocinadores-targetas {
+        gap: 0;
+    }
+    
+    .index-historia-patrocinadores__patrocinadores-targetas a {
         padding-top: 20px;
         padding-bottom: 20px;
-        width: 100%;
-        flex-direction: column;
-        gap: 15px;
+
+        background-color: transparent;
+    }
+
+    .index-historia-patrocinadores__patrocinadores-targetas a h6 {
+        display: none;
+    }
+
+    .index-historia-patrocinadores__patrocinadores-targetas a span{
+        display: none;
     }
 
     .index-historia-patrocinadores__patrocinadores-targetas img {
-        height: 35px;
+        height: 100%;
     }
 
     .index-historia-patrocinadores__patrocinadores-targetas :first-child img {
-        height: 40px;
+        height: 100%;
     }
 }
 
@@ -657,6 +670,7 @@
     padding: 20px;
     padding-bottom: 15px;
     text-wrap: wrap;
+    text-decoration: none;
 }
 
 .index-gestiones__sections-2__variaciones-item svg {
@@ -670,33 +684,38 @@
     font-weight: 500;
 }
 
-.index-gestiones__sections-2__variaciones-item a {
+.index-gestiones__sections-2__variaciones-item span {
     align-self: end;
 
     width: 30px;
     height: 30px;
     border: 1px solid #555;
     border-radius: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: transform .2s;
+    transition: filter .2s;
 }
 
-.index-gestiones__sections-2__variaciones-item a:hover {
-    transform: scale(1.05);
+.index-gestiones__sections-2__variaciones-item span:hover {
+    filter: invert(1);
 }
 
-.index-gestiones__sections-2__variaciones-item a svg {
+.index-gestiones__sections-2__variaciones-item span svg {
     height: 100%;
     width: 100%;
 
     width: 20px;
 }
 
-.index-gestiones__sections-2__variaciones-item--2 a {
-    background-color: var(--black);
+.index-gestiones__sections-2__variaciones-item--2 span {
+    background-color: #000;
+}
+
+.index-gestiones__sections-2__variaciones-item--1 span {
+    background-color: #fff;
 }
 
 .index-gestiones__sections-3 {
@@ -895,6 +914,7 @@
 
 .index-gestiones__licencias-item__content a {
     color: var(--black);
+    background-color: #fff;
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 100px;
@@ -905,7 +925,7 @@
     justify-content: center;
     align-items: center;
 
-    transition: transform .2s;
+    transition: filter .2s;
 }
 
 .index-gestiones__licencias-item-2 .index-gestiones__licencias-item__content a {
@@ -913,7 +933,7 @@
 }
 
 .index-gestiones__licencias-item__content a:hover {
-    transform: scale(1.05);
+    filter: invert(1);
 }
 
 /* Section 3.2 -- MEDIA QUERIES */
@@ -969,3 +989,7 @@
         width: 100%;
     }
 }
+
+/* Section 4 */
+
+
