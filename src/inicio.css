@@ -22,22 +22,22 @@
 }
 
 .index-header__column-1__background-image {
-    height: 180px;
-    width: 130px;
+    height: 200px;
+    width: 150px;
     background-color: #262626;
     position: relative;
 }
 
 .index-header__column-1__background-image img {
     position: absolute;
-    width: 120px;
-    top: -20px;
+    width: 140px;
+    top: -30px;
     right: 0;
 }
 
 .index-header__column-1__button {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: #fff;
+    color: #000;
     border: 1px solid #ccc;
     border-radius: 100px;
     text-decoration: none;
@@ -129,7 +129,7 @@
 
 .index-header__column-2__buttons-1 {
     background-color: #010101;
-    color: var(--white);
+    color: #fff;
 
     transition: transform .2s;
 }
@@ -156,8 +156,8 @@
 
 .index-header__column-3__background-image-1,
 .index-header__column-3__background-image-2 {
-    width: 110px;
-    height: 90px;
+    width: 140px;
+    height: 120px;
 }
 
 .index-header__column-3__background-image-1 {
@@ -170,9 +170,9 @@
 }
 
 .index-header__column-3__background-image-1 img {
-    width: 85px;
+    width: 120px;
     position: absolute;
-    top: 28px;
+    top: 30px;
     left: 50px;
 }
 
@@ -182,9 +182,9 @@
 }
 
 .index-header__column-3__background-image-2 img {
-    width: 140px;
+    width: 170px;
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 5px;
 }
 
@@ -250,6 +250,7 @@
 
     .index-header__column-3__background-image-1 {
         width: 350px;
+        height: 100px;
         border-radius: 10px;
         margin-top: 10px;
     }
@@ -351,7 +352,7 @@
 .index-historia-patrocinadores {
     width: 100%;
     background-color: #010101;
-    color: var(--white);
+    color: #fff;
     border-radius: 20px 20px 0 0;
     padding: 100px 0;
     padding-bottom: 150px;
@@ -379,7 +380,7 @@
 }
 
 .index-historia-patrocinadores__historia-contenido a {
-    background-color: var(--white);
+    background-color: #fff;
     width: fit-content;
     color: #000;
     text-decoration: none;
@@ -466,12 +467,12 @@
 }
 
 .index-historia-patrocinadores__patrocinadores-targetas :first-child span {
-    background-color: var(--white);
+    background-color: #fff;
 }
 
 .index-historia-patrocinadores__patrocinadores-button {
     backdrop-filter: blur(5px);
-    color: var(--white);
+    color: #fff;
     width: fit-content;
     text-decoration: none;
     padding: 10px 20px;
@@ -600,6 +601,10 @@
     margin-top: 50px;
 }
 
+.index-gestiones__sections h6 {
+    font-weight: 500;
+}
+
 .index-gestiones__sections-1 {
     background-color: var(--red);
     padding: 30px;
@@ -613,17 +618,17 @@
     width: 40%;
 }
 
-.index-gestiones__sections-1 p {
+.index-gestiones__sections p {
     color: #000a;
 }
 
 .index-gestiones__sections-1 a {
-    color: var(--white);
+    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 100px;
     font-size: .7rem;
-    background-color: var(--black);
+    background-color: #000;
     width: fit-content;
 
     position: absolute;
@@ -669,7 +674,7 @@
     justify-content: center;
     gap: 20px;
 
-    background-color: var(--white);
+    background-color: #fff;
     height: 100px;
     padding: 20px;
     padding-bottom: 15px;
@@ -684,7 +689,7 @@
 
 .index-gestiones__sections-2__variaciones-item p {
     align-self: start;
-    color: var(--black);
+    color: #000;
     font-weight: 500;
 }
 
@@ -728,11 +733,11 @@
     max-width: 1200px;
     padding: 100px 0;
 
-    background-color: var(--black);
+    background-color: #000;
     min-height: 150px;
     padding: 30px;
     padding-left: 100px;
-    color: var(--white);
+    color: #fff;
     min-width: 100px;
 
     display: flex;
@@ -741,6 +746,8 @@
     align-items: center;
     gap: 20px;
     position: relative;
+
+    z-index: -1;
 }
 
 .index-gestiones__sections-3 img {
@@ -761,7 +768,7 @@
 }
 
 .index-gestiones__sections-3 a {
-    color: var(--black);
+    color: #000;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 100px;
@@ -872,6 +879,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    max-width: 650px;
 }
 
 .index-gestiones__licencias-item-1 {
@@ -885,7 +894,7 @@
 }
 
 .index-gestiones__licencias-item h6 {
-    color: var(--black);
+    color: #000;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -917,7 +926,7 @@
 }
 
 .index-gestiones__licencias-item__content a {
-    color: var(--black);
+    color: #000;
     background-color: #fff;
     border: 1px solid #000a ;
     padding: 15px;
@@ -933,7 +942,7 @@
 }
 
 .index-gestiones__licencias-item-2 .index-gestiones__licencias-item__content a {
-    background-color: var(--black);
+    background-color: #000;
     border: 1px solid #fffa;
 }
 
@@ -949,6 +958,7 @@
         flex-direction: column;
         text-align: center;
         padding: 0 10%;
+        margin-bottom: 100px;
     }
 
     .index-gestiones__licencias-item__icon {
@@ -1013,6 +1023,10 @@
     color: #0008;
 }
 
+.index-grupos h2 {
+    text-align: center;
+}
+
 .index-grupos__nav {
     display: flex;
     justify-content: space-between;
@@ -1024,9 +1038,10 @@
 
 .index-grupos__nav-item {
     flex-grow: 1;
-    height: 100%;
     padding: 30px;
+    height: 100%;
     max-width: 150px;
+    background-color: #fff;
 
     display: flex;
     flex-direction: column;
@@ -1038,8 +1053,7 @@
     justify-content: space-between;
     align-items: center;
 
-    transition: all .15s;
-    transition: color 0;
+    transition: all .5s;
 }
 
 .index-grupos__nav-item div {
@@ -1188,4 +1202,148 @@
 
 .index-grupos__nav-item--active a:hover svg path{
     stroke: #fff;
+}
+
+/* Section 4 -- MEDIA QUERIES */
+
+@media screen and (max-width: 1153px) {
+    .index-grupos h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .index-grupos {
+        height: 800px;
+        margin-top: -150px;
+    }
+
+    .index-grupos__nav {
+        flex-direction: column;
+    }
+
+    .index-grupos__nav-item {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: row-reverse;
+
+        transition: all .2s;
+    }
+
+    .index-grupos__nav-item button {
+        position: initial;
+    }
+
+    .index-grupos__nav-item--active a {
+        position: initial;
+    }
+
+    .index-grupos__nav-item h6, .index-grupos__nav-item p {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+    }
+
+    .index-grupos__nav-item div {
+        flex-direction: column;
+    }
+
+    .index-grupos__nav-item--active {
+        justify-content: initial;
+        flex-direction: column;
+    }
+
+    .index-grupos__nav-item--active button {
+        position: absolute;
+    }
+}
+
+/* Section 5 */
+
+.index-contacto {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-contacto div {   
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.index-contacto div h4 {
+    color: #0008;
+}
+
+.index-contacto div form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}   
+
+.index-contacto div form label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    border: 1px solid #0003;
+    padding: 10px;
+}
+
+.index-contacto div form label svg {
+    height: 15px;
+    width: 15px;
+}
+
+.index-contacto div form label input {
+    border: none;
+    width: 100%;
+}
+
+.index-contacto div form label input:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.index-contacto div form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-family: 'Epilogue';
+    border: 1px solid #0003;
+}
+
+.index-contacto div form textarea:focus {
+    outline: none;
+}
+
+.index-contacto div form input[type="submit"] {
+    width: 180px;
+    height: 35px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+
+    transition: background-color .2s, color .2s;
+}
+
+.index-contacto div form input[type="submit"]:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 500;
+}
+
+.index-contacto img {
+    object-fit: cover;
+    width: 500px;
+    height: auto;
 }

@@ -27,19 +27,19 @@ const mercadal = document.querySelector(".index-grupos__nav-item--mercadal");
 const alaior = document.querySelector(".index-grupos__nav-item--alaior");
 
 mahon.addEventListener("click", (e) => {
-    mahon.classList.toggle("index-grupos__nav-item--active");
+    mahon.classList.add("index-grupos__nav-item--active");
     mercadal.classList.remove("index-grupos__nav-item--active");
     alaior.classList.remove("index-grupos__nav-item--active");
 });
 
 mercadal.addEventListener("click", (e) => {
-    mercadal.classList.toggle("index-grupos__nav-item--active");
+    mercadal.classList.add("index-grupos__nav-item--active");
     mahon.classList.remove("index-grupos__nav-item--active");
     alaior.classList.remove("index-grupos__nav-item--active");
 });
 
 alaior.addEventListener("click", (e) => {
-    alaior.classList.toggle("index-grupos__nav-item--active");
+    alaior.classList.add("index-grupos__nav-item--active");
     mahon.classList.remove("index-grupos__nav-item--active");
     mercadal.classList.remove("index-grupos__nav-item--active");
 });
