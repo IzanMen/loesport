@@ -22,26 +22,26 @@ document.querySelector(".header__nav-menu").addEventListener("click", (e) => {
 
 // Desplegables componente "GRUPOS"
 
-const mahon = document.querySelector(".index-grupos__nav-item--mahon");
-const mercadal = document.querySelector(".index-grupos__nav-item--mercadal");
-const alaior = document.querySelector(".index-grupos__nav-item--alaior");
+const mahon = document.querySelector(".global-grupos__nav-item--mahon");
+const mercadal = document.querySelector(".global-grupos__nav-item--mercadal");
+const alaior = document.querySelector(".global-grupos__nav-item--alaior");
 
 mahon.addEventListener("click", (e) => {
-    mahon.classList.add("index-grupos__nav-item--active");
-    mercadal.classList.remove("index-grupos__nav-item--active");
-    alaior.classList.remove("index-grupos__nav-item--active");
+    mahon.classList.add("global-grupos__nav-item--active");
+    mercadal.classList.remove("global-grupos__nav-item--active");
+    alaior.classList.remove("global-grupos__nav-item--active");
 });
 
 mercadal.addEventListener("click", (e) => {
-    mercadal.classList.add("index-grupos__nav-item--active");
-    mahon.classList.remove("index-grupos__nav-item--active");
-    alaior.classList.remove("index-grupos__nav-item--active");
+    mercadal.classList.add("global-grupos__nav-item--active");
+    mahon.classList.remove("global-grupos__nav-item--active");
+    alaior.classList.remove("global-grupos__nav-item--active");
 });
 
 alaior.addEventListener("click", (e) => {
-    alaior.classList.add("index-grupos__nav-item--active");
-    mahon.classList.remove("index-grupos__nav-item--active");
-    mercadal.classList.remove("index-grupos__nav-item--active");
+    alaior.classList.add("global-grupos__nav-item--active");
+    mahon.classList.remove("global-grupos__nav-item--active");
+    mercadal.classList.remove("global-grupos__nav-item--active");
 });
 
 
