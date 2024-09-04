@@ -535,6 +535,10 @@
         text-align: center;
     }
 
+    .index-historia-patrocinadores__historia a {
+        margin: auto;
+    }
+
     .index-historia-patrocinadores__historia img {
         width: 100%;
     }
@@ -915,7 +919,7 @@
 .index-gestiones__licencias-item__content a {
     color: var(--black);
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #000a ;
     padding: 15px;
     border-radius: 100px;
     height: 60px;
@@ -930,6 +934,7 @@
 
 .index-gestiones__licencias-item-2 .index-gestiones__licencias-item__content a {
     background-color: var(--black);
+    border: 1px solid #fffa;
 }
 
 .index-gestiones__licencias-item__content a:hover {
@@ -992,4 +997,195 @@
 
 /* Section 4 */
 
+.index-grupos {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.index-grupos h4 {
+    color: #0008;
+}
+
+.index-grupos__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    height: 400px;
+    width: 100%;
+}
+
+.index-grupos__nav-item {
+    flex-grow: 1;
+    height: 100%;
+    padding: 30px;
+    max-width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 1px solid #0002;
+    position: relative;
+
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all .15s;
+    transition: color 0;
+}
+
+.index-grupos__nav-item div {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.index-grupos__nav-item button {
+    padding: 10px 12px;
+    width: fit-content;
+    border-radius: 100px;
+    border: 1px solid #000a;
+    background-color: #fff;
+
+    transition: background-color .2s;
+}
+
+.index-grupos__nav-item button:hover {
+    background-color: #000;
+}
+
+.index-grupos__nav-item button:hover svg path {
+    stroke: #fff;
+}
+
+.index-grupos__nav-item button svg {
+    width: 30px;
+    stroke: #000;
+
+    transition: stroke .3s;
+}
+
+.index-grupos__nav-item ul {
+    display: none;
+}
+
+.index-grupos__nav-item a {
+    display: none;
+}
+
+.index-grupos__nav-item h6{
+    font-size: 1.5rem;
+    font-weight: 400;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+
+}
+
+.index-grupos__nav-item p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.index-grupos__nav-item--active {
+    flex-grow: 5;
+    background-color: var(--yellow);
+    border: none;
+    max-width: 100%;
+
+    justify-content: start;
+    align-items: start;
+
+    writing-mode: horizontal-tb;
+}
+
+.index-grupos__nav-item--active div {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.index-grupos__nav-item--active button {
+    transform: rotate(90deg);
+    background-color: #000;
+
+    
+    position: absolute;
+    right: 30px;
+}
+
+.index-grupos__nav-item--active button svg {
+    stroke: #fff;
+}
+
+.index-grupos__nav-item--active h6 {
+    font-weight: 600;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+}
+
+.index-grupos__nav-item--active p {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+}
+
+.index-grupos__nav-item--active ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.index-grupos__nav-item--active ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.index-grupos__nav-item--active ul li svg {
+    height: 20px;
+}
+
+.index-grupos__nav-item--active ul li p {
+    font-size: .7rem;
+    font-weight: 600;
+
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+}
+
+.index-grupos__nav-item--active a {
+    padding: 10px 12px;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    border-radius: 100px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    font-size: .8rem;
+
+    position: absolute;
+    bottom: 30px;
+
+    transition: background-color .3s;
+}
+
+.index-grupos__nav-item--active a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.index-grupos__nav-item--active a:hover svg path{
+    stroke: #fff;
+}
