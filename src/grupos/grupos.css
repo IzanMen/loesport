@@ -475,7 +475,7 @@ textarea {
     height: auto;
 }
 
-/* Contacto -- MEDIA QUERIES */
+/* Section 5 -- MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {
     .global-contacto {
@@ -494,5 +494,11 @@ textarea {
 
     .global-contacto {
         gap: 40px;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .global-contacto div{
+        margin-top: 100px;
     }
 }

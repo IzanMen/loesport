@@ -1,0 +1,203 @@
+
+.sub-grupos-main {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sub-grupos-main h3 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sub-grupos-main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.sub-grupos-main__nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    border: 1px solid #dfdfdf;
+    padding: 20px 30px;
+    width: 350px;
+}
+
+.sub-grupos-main__nav-item--active {
+    background-color: var(--yellow);
+    border: none;
+}
+
+.sub-grupos-main__nav-item span {
+    height: 35px;
+    width: 35px;
+
+    border: 1px solid #000a;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color .2s;
+}
+
+.sub-grupos-main__nav-item span:hover {
+    background-color: #000;
+}
+
+.sub-grupos-main__nav-item span:hover svg path {
+    stroke: #fff;
+}
+
+.sub-grupos-main__nav-item--active span {
+    background-color: #000;
+}
+
+.sub-grupos-main__nav-item--active span svg path {
+    stroke: #fff;
+}
+
+.sub-grupos-main__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sub-grupos-main__content {
+    border: 1px solid #dfdfdf;
+    padding: 30px;
+    display: none;
+    width: 100%;
+
+    position: relative;
+}
+
+.sub-grupos-main__content h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sub-grupos-main__content table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: .8rem;
+    margin-top: 20px;
+}
+
+.sub-grupos-main__content table thead {
+    height: 30px;
+    background-color: #0002;
+}
+
+.sub-grupos-main__content table tbody {
+    height: 30px;
+}
+
+.sub-grupos-main__content table tbody tr th {
+    width: 200px;
+}
+
+th, tr, td {
+    border: 1px solid #0003;
+    padding: 10px;
+    color: #555;
+}
+
+.sub-grupos-main__content__table-2 {
+    display: none;
+}
+
+.sub-grupos-main__content h6 {
+    margin-top: 20px;
+    font-size: .9rem;
+    color: #000a;
+}
+
+.sub-grupos-main__content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.sub-grupos-main__content__esport-salut-familia {
+    border: 1px solid #0003;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.sub-grupos-main__content__esport-salut-familia h6 {
+    margin-top: 0;
+}
+
+.sub-grupos-main__content__esport-salut-familia p {
+    font-size: .9rem;
+    color: #000a;
+    font-weight: 600;
+}
+
+.sub-grupos-main__content__esport-salut-familia p span {
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 500;
+    color: #000;
+
+    margin-top: 10px;
+}
+
+#comienzo-clases {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.sub-grupos-main__content-button-1,
+.sub-grupos-main__content-button-2 {
+    padding: 10px 25px;
+    width: fit-content;
+    border: none;
+    border-radius: 100px;
+    font-size: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+}
+
+.sub-grupos-main__content-button-1 {
+    background-color: #010101;
+    color: #fff;
+
+    transition: transform .2s;
+}
+
+.sub-grupos-main__content-button-1:hover {
+    transform: scale(1.05);
+}
+
+.sub-grupos-main__content-button-2 {
+    text-decoration: underline;
+
+    left: 140px;
+}
+
+.sub-grupos-main__content-button-2 svg {
+    width: 15px;
+    height: 15px;
+}
+
+.sub-grupos-main__content--active {
+    display: block;
+}
