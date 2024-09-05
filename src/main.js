@@ -30,19 +30,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Desplegables componente "SUBGRUPOS"
-    const subgruposButtons = document.querySelectorAll('[id^="alaior-button-"]');
-    const subgruposContents = document.querySelectorAll('[id^="alaior-"]');
+    // Funcionalidad para las páginas de grupos (Alaior, Mahón y Mercadal)
+    const groupPages = ['alaior', 'mahon', 'mercadal'];
 
-    subgruposButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const targetId = button.id.replace('button-', '');
-            
-            subgruposButtons.forEach(btn => btn.classList.remove('sub-grupos-main__nav-item--active'));
-            subgruposContents.forEach(content => content.classList.remove('sub-grupos-main__content--active'));
-            
-            button.classList.add('sub-grupos-main__nav-item--active');
-            document.getElementById(targetId).classList.add('sub-grupos-main__content--active');
+    groupPages.forEach(page => {
+        const navItems = document.querySelectorAll(`#${page}-button-escolares, #${page}-button-adultos-fondo, #${page}-button-adultos-esport-salut, #${page}-button-womens`);
+        const contentDivs = document.querySelectorAll(`#${page}-escolares, #${page}-adultos-fondo, #${page}-adultos-esport-salut, #${page}-womens`);
+
+        navItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                // Remover la clase activa de todos los elementos de navegación
+                navItems.forEach(navItem => navItem.classList.remove('sub-grupos-main__nav-item--active'));
+                
+                // Añadir la clase activa al elemento clickeado
+                item.classList.add('sub-grupos-main__nav-item--active');
+
+                // Ocultar todos los contenidos
+                contentDivs.forEach(div => div.classList.remove('sub-grupos-main__content--active'));
+                
+                // Mostrar el contenido correspondiente
+                contentDivs[index].classList.add('sub-grupos-main__content--active');
+            });
         });
     });
 });

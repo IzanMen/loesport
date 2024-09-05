@@ -59,6 +59,7 @@
 
 .sub-grupos-main__nav-item--active span {
     background-color: #000;
+    transform: rotate(90deg);
 }
 
 .sub-grupos-main__nav-item--active span svg path {
@@ -200,4 +201,41 @@ th, tr, td {
 
 .sub-grupos-main__content--active {
     display: block;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1025px) {
+    .sub-grupos-main__main {
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .sub-grupos-main__nav-item {
+        width: 100%;
+    }
+
+    .sub-grupos-main__content h6 {
+        line-height: 1.2rem;
+    }
+
+    .sub-grupos-main__content p {
+        font-size: 1rem;
+    }
+
+    .sub-grupos-main__content__esport-salut-familia p span{
+        font-size: 1rem;
+    }
+
+    .sub-grupos-main__content__esport-salut-familia {
+        width: 100%;
+    }
+
+    .sub-grupos-main__content__table-1 {
+        display: none;
+    }
+
+    .sub-grupos-main__content__table-2 {
+        display: block;
+    }
 }
