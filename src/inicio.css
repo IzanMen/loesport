@@ -1012,6 +1012,7 @@
     width: 80%;
     max-width: 1200px;
     margin: auto;
+    height: 500px;
 
     display: flex;
     flex-direction: column;
@@ -1215,20 +1216,19 @@
 
 @media screen and (max-width: 1000px) {
     .global-grupos {
-        height: 800px;
-        margin-top: -150px;
+        height: 2000px;
     }
 
     .global-grupos__nav {
         flex-direction: column;
+        height: 1000px;
+        max-height: 1000px;
     }
 
     .global-grupos__nav-item {
         width: 100%;
         max-width: 100%;
         flex-direction: row-reverse;
-
-        transition: all .2s;
     }
 
     .global-grupos__nav-item button {
@@ -1251,6 +1251,7 @@
     .global-grupos__nav-item--active {
         justify-content: initial;
         flex-direction: column;
+        position: absolute;
     }
 
     .global-grupos__nav-item--active button {
@@ -1292,15 +1293,17 @@
 .global-contacto div form label {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
 
+    height: 45px;
+    padding: 0 12px;
     border: 1px solid #0003;
-    padding: 10px;
+    border-radius: 100px;
 }
 
 .global-contacto div form label svg {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 .global-contacto div form label input {
@@ -1317,11 +1320,12 @@ textarea {
 }
 
 .global-contacto div form textarea {
+    padding: 15px;
     width: 100%;
     height: 100px;
-    padding: 10px;
     font-family: 'Epilogue';
     border: 1px solid #0003;
+    border-radius: 23px;
 }
 
 .global-contacto div form textarea:focus {
@@ -1334,6 +1338,7 @@ textarea {
     background-color: #000;
     color: #fff;
     border: none;
+    border-radius: 100px;
 
     transition: background-color .2s, color .2s;
 }

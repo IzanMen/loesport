@@ -239,3 +239,14 @@ th, tr, td {
         display: block;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .sub-grupos-main__content-button-1 {
+        width: 100%;
+    }
+    .sub-grupos-main__content-button-2 {
+        top: 660px;
+        width: 100%;
+        left: 0;
+    }
+}

@@ -1,0 +1,228 @@
+/* Patrocinaodres Header */
+
+.patrocinadores-header {
+    width: 100vw;
+    height: 250px;
+    position: relative;
+    overflow: hidden; 
+    padding: 0 10%;
+
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patrocinadores-header img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block; 
+
+    position: absolute;
+}
+
+.patrocinadores-header::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(40deg, #000 0%, #0007 50%, #000 100%);
+}
+
+.patrocinadores-header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+
+    z-index: 10;
+}
+
+/* Patrocinador actual */
+
+.patrocinadores-actual {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.patrocinadores-actual h3 {
+    text-align: center;
+    margin: auto;
+    font-size: 1.7rem;
+}
+
+.patrocinadores-actual a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    text-decoration: none;
+
+    padding: 20px;
+    width: fit-content;
+    height: 100px;
+    background-color: var(--blue);
+}
+
+.patrocinadores-actual a img {
+    width: 70px;
+    height: 70px;
+}
+
+.patrocinadores-actual a h4 {
+    color: #000;
+}
+
+.patrocinadores-actual a span {
+    height: 35px;
+    width: 35px;
+
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: filter .2s;
+}
+
+.patrocinadores-actual a span:hover {
+    filter: invert(1);
+}
+
+/* Patrocinador actual -- MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    .patrocinadores-actual {
+        width: 80%;
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .patrocinadores-actual a {
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Patrocinadores colaborar */
+
+.patrocinadores-colaborar {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+    padding-top: 240px;
+    border: 1px solid #0005;
+}
+
+.patrocinadores-colaborar header {
+    background-color: #000;
+    height: 200px;
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.patrocinadores-colaborar header h3 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.patrocinadores-colaborar header p {
+    font-size: 6.5rem;
+    font-weight: 500;
+    color: #fff1;
+
+    margin-top: 45px;
+}
+
+.patrocinadores-colaborar p {
+    font-size: 1rem;
+    color: #000a;
+}
+
+.patrocinadores-colaborar__niveles {
+    width: 100%;
+    height: 250px;
+
+
+    display: flex;
+    gap: 10px;
+}
+
+.patrocinadores-colaborar__niveles-item {
+    background-color: var(--blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.patrocinadores-colaborar__niveles-item h6 {
+    background-color: rgba(0, 165, 0, 0.558);
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.patrocinadores-colaborar__niveles-item p {
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.patrocinadores-colaborar__niveles-item--2 h6 {
+    background-color: rgba(0, 0, 165, 0.558);
+}
+
+.patrocinadores-colaborar__niveles-item--3 h6 {
+    background-color: rgba(165, 0, 0, 0.558);
+}

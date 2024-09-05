@@ -5,8 +5,12 @@
     height: 250px;
     position: relative;
     overflow: hidden; 
+    padding: 0 10%;
 
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grupos-header img {
@@ -14,6 +18,7 @@
     height: 100%;
     width: 100%;
     display: block; 
+    position: absolute;
 }
 
 .grupos-header::after {
@@ -25,7 +30,16 @@
     right: 0;
     bottom: 0;
 
-    background: linear-gradient(40deg, #000 0%, #0003 50%, #000 100%);
+    background: linear-gradient(40deg, #000 0%, #0007 50%, #000 100%);
+}
+
+.grupos-header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+
+    z-index: 10;
 }
 
 /*Grupos Header -- MEDIA QUERIES */
@@ -416,15 +430,17 @@
 .global-contacto div form label {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
 
+    height: 45px;
+    padding: 0 12px;
     border: 1px solid #0003;
-    padding: 10px;
+    border-radius: 100px;
 }
 
 .global-contacto div form label svg {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 .global-contacto div form label input {
@@ -441,11 +457,12 @@ textarea {
 }
 
 .global-contacto div form textarea {
+    padding: 15px;
     width: 100%;
     height: 100px;
-    padding: 10px;
     font-family: 'Epilogue';
     border: 1px solid #0003;
+    border-radius: 23px;
 }
 
 .global-contacto div form textarea:focus {
@@ -458,6 +475,7 @@ textarea {
     background-color: #000;
     color: #fff;
     border: none;
+    border-radius: 100px;
 
     transition: background-color .2s, color .2s;
 }
