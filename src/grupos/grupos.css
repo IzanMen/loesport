@@ -5,7 +5,7 @@
     height: 250px;
     position: relative;
     overflow: hidden; 
-    padding: 0 10%;
+    padding: 50px 10%;
 
     margin-bottom: 100px;
     display: flex;
@@ -47,6 +47,12 @@
 @media screen and (max-width: 800px) {
     .grupos-header {
         height: 140px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .grupos-header {
+        height: 200px;
     }
 }
 
