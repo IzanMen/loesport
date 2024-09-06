@@ -1,3 +1,19 @@
+// Redirección
+
+if (window.location.pathname === '/grupos') {
+    window.location.replace('/grupos/');
+} else if (window.location.pathname === '/contacto') {
+    window.location.replace('/contacto/');
+} else if (window.location.pathname === '/galeria') {
+    window.location.replace('/galeria/');
+} else if (window.location.pathname === '/patrocinadores') {
+    window.location.replace('/patrocinadores/');
+} else if (window.location.pathname === '/equipamiento') {
+    window.location.replace('/equipamiento/');
+} else if (window.location.pathname === '/nuestro-club') {
+    window.location.replace('/nuestro-club/');
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     // Animación del NAV (Se añade la clase "active" a cada elemento del NAV cuando la url coincide con el enlace del elemento)
     const navLinks = document.querySelectorAll('.header__nav__list-item a');

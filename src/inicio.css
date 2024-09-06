@@ -645,6 +645,15 @@
     transform: scale(1.05);
 }   
 
+.index-gestiones__sections-2 img {
+    height: 300px;
+    width: auto;
+    position: absolute;
+
+    top: -300px;
+    right: -100px;
+}
+
 .index-gestiones__sections-2 {
     background-color: var(--blue);
     padding: 30px;
@@ -652,6 +661,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    position: relative;
 
     width: calc(60% - 20px);
 }
@@ -813,6 +824,10 @@
     .index-gestiones__sections-2 {
         width: 100%;
         text-align: center;
+    }
+
+    .index-gestiones__sections-2 img {
+        display: none;
     }
 
     .index-gestiones__sections-3 {
@@ -1216,18 +1231,19 @@
 
 @media screen and (max-width: 1000px) {
     .global-grupos {
-        height: 2000px;
+        height: 700px;
+        margin-top: -100px;
+        margin-bottom: 150px;
     }
 
     .global-grupos__nav {
         flex-direction: column;
-        height: 1000px;
-        max-height: 1000px;
     }
 
     .global-grupos__nav-item {
         width: 100%;
         max-width: 100%;
+        height: fit-content;
         flex-direction: row-reverse;
     }
 
@@ -1251,7 +1267,6 @@
     .global-grupos__nav-item--active {
         justify-content: initial;
         flex-direction: column;
-        position: absolute;
     }
 
     .global-grupos__nav-item--active button {
