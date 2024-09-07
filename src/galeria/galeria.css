@@ -43,6 +43,15 @@
     z-index: 10;
 }
 
+/* Galeria - Header - MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+    .galeria-header {
+        height: 140px;
+    }
+}
+
+
 /* Galeria - Galeria */
 
 main div {

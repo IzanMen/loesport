@@ -887,9 +887,30 @@
 }
 
 @media screen and (max-width: 400px) {
+    .index-gestiones__sections-3 a svg{
+        display: none;
+    }
+    
     .index-gestiones__sections-3 a{
+        padding-left: 0;
+        padding-right: 0;
         width: 100%;
         font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .index-gestiones__sections-2__variaciones-item svg {
+        width: 22px;
+    }
+    
+    .index-gestiones__sections-2__variaciones-item p {
+        font-size: .8rem;
+    }
+    
+    .index-gestiones__sections-2__variaciones-item span {
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -1307,5 +1328,15 @@
 
     .global-grupos__nav-item--active button {
         position: absolute;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .global-grupos__nav-item--active button {
+        display: none;
+    }
+
+    .global-grupos {
+        margin-bottom: 250px;
     }
 }

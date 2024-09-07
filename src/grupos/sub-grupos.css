@@ -3,6 +3,7 @@
     width: 80%;
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 150px;
 }
 
 .sub-grupos-main h3 {
@@ -47,6 +48,16 @@
     align-items: center;
 
     transition: background-color .2s;
+}
+
+.sub-grupos-main__nav-item span svg {
+    height: 20px;
+    width: 20px;
+
+}
+
+.sub-grupos-main__nav-item span svg path {
+    stroke-width: 1.5;
 }
 
 .sub-grupos-main__nav-item span:hover {
@@ -124,7 +135,7 @@ th, tr, td {
 }
 
 .sub-grupos-main__content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
@@ -141,13 +152,13 @@ th, tr, td {
 }
 
 .sub-grupos-main__content__esport-salut-familia p {
-    font-size: .9rem;
+    font-size: 1rem;
     color: #000a;
     font-weight: 600;
 }
 
 .sub-grupos-main__content__esport-salut-familia p span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: block;
     font-weight: 500;
     color: #000;
@@ -184,6 +195,16 @@ th, tr, td {
     transition: transform .2s;
 }
 
+
+.sub-grupos-main__content-button-1 svg {
+    width: 15px;
+    height: 15px;
+}
+
+.sub-grupos-main__content-button-1 svg path {
+    stroke: #fff;
+}
+
 .sub-grupos-main__content-button-1:hover {
     transform: scale(1.05);
 }
@@ -191,7 +212,7 @@ th, tr, td {
 .sub-grupos-main__content-button-2 {
     text-decoration: underline;
 
-    left: 140px;
+    left: 135px;
 }
 
 .sub-grupos-main__content-button-2 svg {
@@ -245,8 +266,28 @@ th, tr, td {
         width: 100%;
     }
     .sub-grupos-main__content-button-2 {
-        top: 660px;
+        top: 665px;
         width: 100%;
         left: 0;
     }
 }
+
+@media screen and (max-width: 377px) {
+    .sub-grupos-main__content-button-2 {
+        top: 690px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .sub-grupos-main__content-button-2 {
+        top: 730px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .sub-grupos-main__content-button-2 {
+        top: 740px;
+    }
+}
+
+
