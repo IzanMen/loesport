@@ -48,6 +48,7 @@
 @media screen and (max-width: 800px) {
     .club-header {
         height: 140px;
+        margin-bottom: 50px;
     }
 }
 
@@ -63,7 +64,6 @@
     width: 80%;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
 
     display: flex;
     flex-direction: column;
@@ -152,6 +152,10 @@
 /* Nuestro club - Entrenadres -- MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {
+    .club-entrenadores {
+        margin-bottom: -100px;
+    }
+    
     .club-entrenadores__content div {
         width: calc(50% - 15px);
     }    
@@ -162,133 +166,3 @@
         width: 100%;
     }   
 }
-
-/* Contacto */
-
-.global-contacto {
-    background-color: #fff;
-    width: 100%;
-    padding: 70px 10%;
-    margin: auto;
-    margin-top: -50px;
-    border-radius: 50px 50px 0 0;
-}
-
-.global-contacto__content {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.global-contacto__content div{   
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.global-contacto__content div h4 {
-    color: #0008;
-}
-
-.global-contacto__content div form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}   
-
-.global-contacto__content div form label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    height: 45px;
-    padding: 0 12px;
-    border: 1px solid #0003;
-    border-radius: 100px;
-}
-
-.global-contacto__content div form label svg {
-    height: 20px;
-    width: 20px;
-}
-
-.global-contacto__content div form label input {
-    border: none;
-    width: 100%;
-}
-
-.global-contacto__content div form label input:focus {
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-.global-contacto__content div form textarea {
-    padding: 15px;
-    width: 100%;
-    height: 100px;
-    font-family: 'Epilogue';
-    border: 1px solid #0003;
-    border-radius: 23px;
-}
-
-.global-contacto__content div form textarea:focus {
-    outline: none;
-}
-
-.global-contacto__content div form input[type="submit"] {
-    width: 180px;
-    height: 35px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 100px;
-
-    transition: background-color .2s, color .2s;
-}
-
-.global-contacto__content div form input[type="submit"]:hover {
-    background-color: #fff;
-    border: 1px solid #000;
-    color: #000;
-    font-weight: 500;
-}
-
-.global-contacto__content img {
-    object-fit: cover;
-    width: 45%;
-    height: auto;
-}
-
-/* Contacto -- MEDIA QUERIES */
-
-@media screen and (max-width: 1000px) {
-    .global-contacto__content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .global-contacto__content div form input[type="submit"] {
-        width: 100%;
-    }
-
-    .global-contacto__content img {
-        width: 100%;
-        height: 100px;
-    }
-
-    .global-contacto__content {
-        gap: 40px;
-    }
-}
-
-@media screen and (max-width: 387px) {
-    .global-contacto__content div{
-        margin-top: 100px;
-    }
-}
-
