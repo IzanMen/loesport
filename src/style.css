@@ -416,15 +416,9 @@ textarea {
     font-weight: 500;
 }
 
-.global-contacto a {
+.global-contacto iframe {
     width: 100%;
     height: auto;
-}
-
-.global-contacto a img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
 }
 
 /* Contact -- MEDIA QUERIES */
@@ -440,9 +434,9 @@ textarea {
         width: 100%;
     }
 
-    .global-contacto img {
+    .global-contacto iframe {
         width: 100%;
-        height: 100px;
+        height: 300px;
     }
 
     .global-contacto {
