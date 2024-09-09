@@ -53,4 +53,67 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
+
+    // Funcionalidad de galería de imágenes
+    const images = document.querySelectorAll('.gallery-grid img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const close = document.querySelector('.close');
+    const next = document.querySelector('.next');
+    const prev = document.querySelector('.prev');
+    let currentIndex = 0;
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+            currentIndex = index;
+        });
+    });
+
+    close.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    function showPrevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    next.addEventListener('click', showNextImage);
+    prev.addEventListener('click', showPrevImage);
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+
+    // Funcionalidad de deslizamiento para dispositivos móviles
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function checkDirection() {
+        if (touchEndX < touchStartX) showNextImage();
+        if (touchEndX > touchStartX) showPrevImage();
+    }
+
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    lightbox.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        checkDirection();
+    });
+
+    // Prevenir el zoom en dispositivos móviles al tocar dos veces
+    lightboxImg.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
 });
