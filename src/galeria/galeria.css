@@ -125,4 +125,8 @@ main div img {
     .prev, .next {
         display: none;
     }
+
+    .close {
+        font-size: 6rem;
+    }
 }

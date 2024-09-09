@@ -116,4 +116,70 @@ document.addEventListener("DOMContentLoaded", function() {
     lightboxImg.addEventListener('click', (e) => {
         e.preventDefault();
     });
+
+    // Funcionalidad de galería de imágenes para la página de equipamiento
+    const equipmentImages = document.querySelectorAll('.equipamiento-content__productos a img');
+    const equipmentLightbox = document.getElementById('lightbox');
+    const equipmentLightboxImg = document.getElementById('lightbox-img');
+    const equipmentClose = document.querySelector('.close');
+    const equipmentNext = document.querySelector('.next');
+    const equipmentPrev = document.querySelector('.prev');
+    let equipmentCurrentIndex = 0;
+
+    if (equipmentImages.length > 0) {
+        equipmentImages.forEach((img, index) => {
+            img.addEventListener('click', (e) => {
+                e.preventDefault();
+                equipmentLightbox.style.display = 'block';
+                equipmentLightboxImg.src = img.src;
+                equipmentCurrentIndex = index;
+            });
+        });
+
+        equipmentClose.addEventListener('click', () => {
+            equipmentLightbox.style.display = 'none';
+        });
+
+        function showNextImage() {
+            equipmentCurrentIndex = (equipmentCurrentIndex + 1) % equipmentImages.length;
+            equipmentLightboxImg.src = equipmentImages[equipmentCurrentIndex].src;
+        }
+
+        function showPrevImage() {
+            equipmentCurrentIndex = (equipmentCurrentIndex - 1 + equipmentImages.length) % equipmentImages.length;
+            equipmentLightboxImg.src = equipmentImages[equipmentCurrentIndex].src;
+        }
+
+        equipmentNext.addEventListener('click', showNextImage);
+        equipmentPrev.addEventListener('click', showPrevImage);
+
+        equipmentLightbox.addEventListener('click', (e) => {
+            if (e.target === equipmentLightbox) {
+                equipmentLightbox.style.display = 'none';
+            }
+        });
+
+        // Funcionalidad de deslizamiento para dispositivos móviles
+        let equipmentTouchStartX = 0;
+        let equipmentTouchEndX = 0;
+
+        function checkDirection() {
+            if (equipmentTouchEndX < equipmentTouchStartX) showNextImage();
+            if (equipmentTouchEndX > equipmentTouchStartX) showPrevImage();
+        }
+
+        equipmentLightbox.addEventListener('touchstart', (e) => {
+            equipmentTouchStartX = e.changedTouches[0].screenX;
+        });
+
+        equipmentLightbox.addEventListener('touchend', (e) => {
+            equipmentTouchEndX = e.changedTouches[0].screenX;
+            checkDirection();
+        });
+
+        // Prevenir el zoom en dispositivos móviles al tocar dos veces
+        equipmentLightboxImg.addEventListener('click', (e) => {
+            e.preventDefault();
+        });
+    }
 });
