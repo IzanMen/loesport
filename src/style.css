@@ -56,6 +56,15 @@ p {
     text-align: center;
     font-size: .8rem;
     border-bottom: 1px solid #0002;
+    color: #000a;
+    font-weight: 500;
+}
+
+.header__nav__list-item .active {
+    color: #000;
+}
+
+.header__nav__list-item:hover {
     color: #000;
 }
 
@@ -86,6 +95,7 @@ p {
 
 .header__nav__list-item {
     position: relative;
+    transition: color .2s;
 }
 
 .header__nav__list-item a {
@@ -103,6 +113,7 @@ p {
     height: 35px;
     border: 1px solid #000;
     border-radius: 20px;
+    color: #000;
 
     display: flex;
     justify-content: center;
@@ -265,6 +276,51 @@ p {
     color: #fff;
 }
 
+/* MAIN GLOBAL HEADER */
+
+.main-global-header {
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    overflow: hidden; 
+    padding: 0 10%;
+
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-global-header img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block; 
+
+    position: absolute;
+}
+
+.main-global-header::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(40deg, #000 0%, #0007 50%, #000 100%);
+}
+
+.main-global-header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+
+    z-index: 10;
+}
+
 /* Contact */
 
 .global-contacto {
@@ -290,10 +346,14 @@ p {
     color: #0008;
 }
 
+.global-contacto div h2 {
+    margin-bottom: 20px;
+}
+
 .global-contacto div form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }   
 
 .global-contacto div form label {
@@ -328,7 +388,7 @@ textarea {
 .global-contacto div form textarea {
     padding: 15px;
     width: 100%;
-    height: 100px;
+    height: 160px;
     font-family: 'Epilogue';
     border: 1px solid #0003;
     border-radius: 23px;
@@ -564,6 +624,36 @@ footer p {
 .--footer-legal a {
     color: inherit;
     text-decoration: none;
+}
+
+.--footer-legal p {
+    background-color: #003;
+    padding: 5px 10px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.--footer-legal p span {
+    margin: 0 10px;
+}
+
+.--footer-legal__heart{
+    color: var(--yellow);
+    font-size: 2;
+
+    position: absolute;
+    right: 115px;
+
+    animation: heartbeat 1s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(3);
+    }
 }
 
 /* FOOTER GLOBAL -- MEDIA QUERIES*/

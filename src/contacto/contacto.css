@@ -1,61 +1,3 @@
-/* Contacto Header */
-
-.contacto-header {
-    width: 100vw;
-    height: 250px;
-    position: relative;
-    overflow: hidden; 
-    padding: 50px 10%;
-
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contacto-header img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    display: block; 
-    position: absolute;
-}
-
-.contacto-header::after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background: linear-gradient(40deg, #000 0%, #0007 50%, #000 100%);
-}
-
-.contacto-header h1 {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: #fff;
-
-    z-index: 10;
-}
-
-/*Contacto Header -- MEDIA QUERIES */
-
-@media screen and (max-width: 800px) {
-    .contacto-header {
-        height: 140px;
-    }
-}
-
-@media screen and (max-width: 545px) {
-    .contacto-header {
-        height: 200px;
-    }
-}
-
 /* Contact Content */
 
 .contacto-content {
@@ -64,13 +6,14 @@
     margin: auto;
     margin-top: 100px;
 
+    gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .contacto-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
 }
@@ -88,8 +31,9 @@
 .contacto-content__equipo div {
     width: calc(25% - 15px);
     min-width: 200px;
-    height: 400px;
+    height: 380px;
     color: #000;
+    border: 1px solid #0003;
 
     display: flex;
     flex-direction: column;
@@ -99,12 +43,13 @@
 
 .contacto-content__equipo div img {
     width: 100%;
-    height: 60%;
+    height: 65%;
     object-fit: cover;
 }
 
 .contacto-content__equipo div h6 {
     font-size: 1rem;
+    margin: 0 15px;
     margin-top: 17px;
     font-weight: 500;
 }
@@ -112,12 +57,15 @@
 .contacto-content__equipo div p {
     font-size: .8rem;
     color: #000a;
+    margin: 0 15px;
 }
 
 .contacto-content__equipo div span {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
+    margin: 0 15px;
+    margin-top: 7px;
 }
 
 .contacto-content__equipo div span svg {
@@ -128,7 +76,7 @@
 .contacto-content__contacto-info--1 {
     padding-top: 15px;
     margin-top: 15px;
-    border-top: 1px solid #0005;
+    border-top: 1px solid #0003;
 }
 
 .contacto-content__contacto-info--2 {
