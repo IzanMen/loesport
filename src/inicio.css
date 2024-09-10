@@ -1258,7 +1258,7 @@
 }
 
 .global-grupos__nav-item--active ul li p {
-    font-size: .7rem;
+    font-size: 1rem;
     font-weight: 600;
 
     writing-mode: horizontal-tb;
@@ -1331,6 +1331,12 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .global-grupos__nav-item--active ul li p {
+        font-size: .8rem;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .global-grupos__nav-item--active button {
         display: none;
@@ -1338,5 +1344,9 @@
 
     .global-grupos {
         margin-bottom: 250px;
+    }
+
+    .global-grupos__nav-item--active ul li p {
+        font-size: .6rem;
     }
 }

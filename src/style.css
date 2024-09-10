@@ -57,7 +57,7 @@ p {
     font-size: .8rem;
     border-bottom: 1px solid #0002;
     color: #000a;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header__nav__list-item .active {
@@ -315,7 +315,7 @@ p {
 .main-global-header h1 {
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
 
     z-index: 10;
@@ -344,10 +344,12 @@ p {
 
 .global-contacto div h4 {
     color: #0008;
+    font-weight: 600;
 }
 
 .global-contacto div h2 {
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .global-contacto div form {
@@ -419,6 +421,7 @@ textarea {
 .global-contacto iframe {
     width: 100%;
     height: auto;
+    border: none;
 }
 
 /* Contact -- MEDIA QUERIES */
@@ -455,7 +458,7 @@ textarea {
     padding: 75px 12% 50px 12%;
     text-align: center;
     font-size: .8rem;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 100px;
 }
 
@@ -481,7 +484,7 @@ footer p {
 
 .footer__section-title {
     font-size: inherit;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     color: #ddd;
 }

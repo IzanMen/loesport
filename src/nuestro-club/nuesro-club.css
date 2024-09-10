@@ -15,7 +15,11 @@
     font-size: 1.7rem;
     font-weight: 500;
 }
- 
+
+.club-historia p {
+    color: #000a;
+    line-height: 1.6rem;
+}
 /* Nuestro club - Historia - MEDIA QUERIES */
 
 @media screen and (max-width: 600PX) {
@@ -56,11 +60,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 20px;
 }
 
 .club-entrenadores__content div {
-    width: calc(25% - 15px);
+    width: calc(25% - 8px);
     height: 300px;
     color: #fff;
 
@@ -87,6 +91,7 @@
     font-size: .7rem;
     font-weight: 200;
     line-height: .8rem;
+    color: #fffc;
 }
 
 /* Nuestro club - Entrenadres -- MEDIA QUERIES */
