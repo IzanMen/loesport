@@ -140,6 +140,7 @@
 
 .index-header__column-2__buttons-2 {
     text-decoration: underline;
+    color: #000;
 }
 
 .index-header__column-2 svg {
@@ -611,7 +612,8 @@
     font-weight: 500;
 }
 
-.index-gestiones__sections-1 {
+.index-gestiones__sections-1,
+.index-gestiones__sections-2 {
     background-color: var(--red);
     padding: 30px;
     position: relative;
@@ -628,7 +630,8 @@
     color: #000a;
 }
 
-.index-gestiones__sections-1 a {
+.index-gestiones__sections-1 a,
+.index-gestiones__sections-2 a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -647,12 +650,14 @@
     transition: transform .2s;
 }
 
-.index-gestiones__sections-1 a svg {
+.index-gestiones__sections-1 a svg,
+.index-gestiones__sections-2 a svg {
     height: 15px;
     width: 15px;
 }
 
-.index-gestiones__sections-1 a:hover {
+.index-gestiones__sections-1 a:hover,
+.index-gestiones__sections-2 a:hover {
     transform: scale(1.05);
 }   
 
@@ -667,86 +672,6 @@
 
 .index-gestiones__sections-2 {
     background-color: var(--blue);
-    padding: 30px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    position: relative;
-
-    width: calc(60% - 20px);
-}
-
-.index-gestiones__sections-2 p {
-    color: #000a;
-}
-
-.index-gestiones__sections-2__variaciones {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.index-gestiones__sections-2__variaciones-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
-    background-color: #fff;
-    height: 100px;
-    padding: 20px;
-    padding-bottom: 15px;
-    text-wrap: wrap;
-    text-decoration: none;
-}
-
-.index-gestiones__sections-2__variaciones-item svg {
-    width: 30px;
-    align-self: start;
-}
-
-.index-gestiones__sections-2__variaciones-item p {
-    align-self: start;
-    color: #000;
-    font-weight: 500;
-}
-
-.index-gestiones__sections-2__variaciones-item span {
-    align-self: end;
-
-    width: 30px;
-    height: 30px;
-    border: 1px solid #555;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: filter .2s;
-}
-
-.index-gestiones__sections-2__variaciones-item span:hover {
-    filter: invert(1);
-}
-
-.index-gestiones__sections-2__variaciones-item span svg {
-    height: 100%;
-    width: 100%;
-
-    width: 20px;
-}
-
-.index-gestiones__sections-2__variaciones-item--2 span {
-    background-color: #000;
-}
-
-.index-gestiones__sections-2__variaciones-item--1 span {
-    background-color: #fff;
 }
 
 .index-gestiones__sections-3 {

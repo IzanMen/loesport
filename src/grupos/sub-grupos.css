@@ -182,7 +182,9 @@ th, tr, td {
     justify-content: center;
     align-items: center;
     gap: 3px;
-
+    text-decoration: none;
+    color: #000;
+    
     position: absolute;
     bottom: -50px;
     left: 0;

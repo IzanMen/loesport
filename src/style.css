@@ -400,7 +400,7 @@ textarea {
     outline: none;
 }
 
-.global-contacto div form input[type="submit"] {
+.global-contacto div form button[type="submit"] {
     width: 180px;
     height: 35px;
     background-color: #000;
@@ -408,14 +408,28 @@ textarea {
     border: none;
     border-radius: 100px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
     transition: background-color .2s, color .2s;
 }
 
-.global-contacto div form input[type="submit"]:hover {
+.global-contacto div form button[type="submit"]:hover {
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
     font-weight: 500;
+}
+
+.global-contacto__submit-svg {
+    width: 15px;
+    height: 15px;
+}
+
+.global-contacto div form button[type="submit"]:hover svg path{
+    stroke: #000;
 }
 
 .global-contacto iframe {
