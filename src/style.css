@@ -447,7 +447,7 @@ textarea {
         margin-top: 170px;
     }
 
-    .global-contacto div form input[type="submit"] {
+    .global-contacto div form button[type="submit"] {
         width: 100%;
     }
 
