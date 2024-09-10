@@ -650,10 +650,11 @@ footer p {
 
 .--footer-legal__heart{
     color: var(--yellow);
-    font-size: 2;
+    width: 10px;
 
     position: absolute;
-    right: 115px;
+    right: 125px;
+    top: -18px;
 
     animation: heartbeat 1s ease-in-out infinite;
 }
