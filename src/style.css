@@ -645,21 +645,17 @@ footer p {
 .--footer-legal p {
     background-color: #003;
     padding: 5px 10px;
+    width: 210px;
     border-radius: 100px;
-    position: relative;
-}
-
-.--footer-legal p span {
-    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .--footer-legal__heart{
     color: var(--yellow);
     width: 10px;
-
-    position: absolute;
-    right: 110px;
-    top: -18px;
+    height: 10px;
 
     animation: heartbeat 1s ease-in-out infinite;
 }
