@@ -374,6 +374,11 @@ p {
     width: 20px;
 }
 
+.global-contacto div form label svg path {
+    stroke: #000;
+    fill: #000;
+}
+
 .global-contacto div form label input {
     border: none;
     width: 100%;
@@ -653,7 +658,7 @@ footer p {
     width: 10px;
 
     position: absolute;
-    right: 125px;
+    right: 110px;
     top: -18px;
 
     animation: heartbeat 1s ease-in-out infinite;
