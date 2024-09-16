@@ -16,6 +16,12 @@ main div img {
     height: 100%;
 
     object-fit: cover;
+    transition: transform .2s;
+}
+
+main div img:hover {
+    cursor: pointer;
+    transform: scale(1.005);
 }
 
 .galeria-horizontal {

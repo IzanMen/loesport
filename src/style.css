@@ -369,6 +369,10 @@ p {
     border-radius: 100px;
 }
 
+.global-contacto div form label:active {
+    border-color: #000;
+}
+
 .global-contacto div form label svg {
     height: 20px;
     width: 20px;
@@ -403,6 +407,10 @@ textarea {
 
 .global-contacto div form textarea:focus {
     outline: none;
+}
+
+.global-contacto div form textarea:active {
+    border-color: #000;
 }
 
 .global-contacto div form button[type="submit"] {
@@ -637,19 +645,22 @@ footer p {
     gap: 30px;
 }
 
-.--footer-legal a {
+.--footer-legal div a {
     color: inherit;
     text-decoration: none;
 }
 
-.--footer-legal p {
-    background-color: #003;
+.--footer-legal__made-by {
     padding: 5px 10px;
+    border: 1px solid #fff4;
     width: 210px;
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    text-decoration: none;
+    color: inherit;
 }
 
 .--footer-legal__heart{

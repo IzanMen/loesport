@@ -159,7 +159,7 @@
     gap: 30px;
 
     padding: 100px 0 80px 0;
-    height: 350px;
+    height: 300px;
     position: relative;
 
     flex-grow: 1;
@@ -254,16 +254,20 @@
     height: 100px;
     flex-grow: 1;
     min-width: 100px;
-    background-color: var(--blue);
+    background-color: #0000000a;
 }
 
 .patrocinadores-colaborar__content-item h6 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
-.patrocinadores-colaborar__content-item svg {
-    width: 25px;
+.patrocinadores-colaborar__content-item img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 15px;
 }
 
 .patrocinadores-colaborar__content-item--1 {
