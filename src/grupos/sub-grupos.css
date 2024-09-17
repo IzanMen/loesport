@@ -102,7 +102,8 @@
     border-collapse: collapse;
     text-align: left;
     font-size: .8rem;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: -5px;
 }
 
 .sub-grupos-main__content table thead {
@@ -119,9 +120,19 @@
 }
 
 th, tr, td {
-    border: 1px solid #0003;
-    padding: 10px;
+    padding: 15px;
     color: #555;
+    height: 40px;
+}
+
+td {
+    border-left: 1px solid #0003;
+}
+
+thead tr th {
+    border-bottom: 1px solid #0003;
+    border-left: 1px solid #0003;
+    padding-bottom: 7px;
 }
 
 .sub-grupos-main__content__table-2 {
@@ -129,7 +140,7 @@ th, tr, td {
 }
 
 .sub-grupos-main__content h6 {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: .9rem;
     color: #000a;
 }
@@ -144,7 +155,8 @@ th, tr, td {
     padding: 20px;
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .sub-grupos-main__content__esport-salut-familia h6 {
