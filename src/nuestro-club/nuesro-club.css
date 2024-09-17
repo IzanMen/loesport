@@ -121,5 +121,9 @@
     background-color: #fff;
     margin-top: -100px;
     border-radius: 20px 20px 0 0;
-    padding-top: 30px;
+    padding-top: 120px;
+}
+
+.global-contacto {
+    margin-top: 0;
 }

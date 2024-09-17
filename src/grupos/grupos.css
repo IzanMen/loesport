@@ -278,7 +278,6 @@
     }
 }
 
-
 /* Grupos Gestiones */
 
 .grupos-gestiones {
@@ -377,9 +376,10 @@
         position: initial;
     }
 }
+ 
 
-@media screen and (max-width: 385px) {
-    .grupos-gestiones {
-        margin-bottom: -110px;
-    }
-}   
+/* Grupos Contacto */
+
+.global-contacto {
+    margin-top: 100px;
+}
