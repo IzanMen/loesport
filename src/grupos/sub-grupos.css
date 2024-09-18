@@ -273,35 +273,15 @@ thead tr th {
     .sub-grupos-main__content__table-2 {
         display: block;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .sub-grupos-main__content-button-1 {
-        width: 100%;
-    }
+    .sub-grupos-main__content-button-1,
     .sub-grupos-main__content-button-2 {
-        top: 665px;
-        width: 100%;
+        width: 100%;    
+    }
+
+    .sub-grupos-main__content-button-2 {
+        bottom: -90px;
         left: 0;
     }
 }
-
-@media screen and (max-width: 377px) {
-    .sub-grupos-main__content-button-2 {
-        top: 690px;
-    }
-}
-
-@media screen and (max-width: 330px) {
-    .sub-grupos-main__content-button-2 {
-        top: 730px;
-    }
-}
-
-@media screen and (max-width: 325px) {
-    .sub-grupos-main__content-button-2 {
-        top: 740px;
-    }
-}
-
 
