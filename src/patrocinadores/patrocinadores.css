@@ -27,14 +27,17 @@
     text-decoration: none;
 
     padding: 20px;
-    width: fit-content;
+    width: 500px;
     height: 100px;
     background-color: var(--blue);
 }
 
 .patrocinadores-actual a img {
     width: 70px;
-    height: 70px;
+}
+
+.patrocinadores-actual__img-sharpalai {
+    width: 100px !important;
 }
 
 .patrocinadores-actual a h4 {

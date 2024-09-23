@@ -107,12 +107,12 @@
 }
 
 .sub-grupos-main__content table thead {
-    height: 30px;
+    height: 50px;
     background-color: #0002;
 }
 
 .sub-grupos-main__content table tbody {
-    height: 30px;
+    height: 60px;
 }
 
 .sub-grupos-main__content table tbody tr th {
@@ -123,16 +123,26 @@ th, tr, td {
     padding: 15px;
     color: #555;
     height: 40px;
+    font-weight: 500;
 }
 
 td {
     border-left: 1px solid #0003;
+    font-weight: 700;
 }
 
 thead tr th {
     border-bottom: 1px solid #0003;
     border-left: 1px solid #0003;
     padding-bottom: 7px;
+}
+
+tbody {
+    background-color: #00000005;
+}
+
+tbody tr th {
+    font-weight: 500 !important;
 }
 
 .sub-grupos-main__content__table-2 {
