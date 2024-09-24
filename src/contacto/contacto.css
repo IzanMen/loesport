@@ -30,8 +30,8 @@
 
 .contacto-content__equipo div {
     width: calc(25% - 15px);
+    padding-bottom: 10px;
     min-width: 200px;
-    height: 450px;
     color: #000;
     border: 1px solid #0003;
 
@@ -55,10 +55,11 @@
     font-weight: 500;
 }
 
-.contacto-content__equipo div p {
+.contacto-content__equipo div p, .contacto-content__equipo div a {
     font-size: .7rem;
     color: #000a;
     margin: 0 15px;
+    text-decoration: none;
 }
 
 .contacto-content__equipo div span {

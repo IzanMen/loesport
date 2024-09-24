@@ -767,7 +767,6 @@ textarea {
     color: #fff;
     border-radius: 50px 50px 0 0;
     padding: 75px 12% 50px 12%;
-    text-align: center;
     font-size: .8rem;
     font-weight: 400;
     margin-top: 100px;
@@ -779,6 +778,7 @@ footer a {
 
 footer p {
     font-size: inherit;
+    color: #fffa;
 }
 
 .footer__content {
@@ -797,7 +797,7 @@ footer p {
     font-size: inherit;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #ddd;
+    color: #fff;
 }
 
 .--footer-logo {
@@ -805,7 +805,6 @@ footer p {
     padding-right: 25px;
 
     width: 220px;
-    justify-self: center;
 }
 
 .--footer-nav {
@@ -818,13 +817,12 @@ footer p {
     list-style: none;
 
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
 }
 
 .--footer-nav__list a{
-    color: inherit;
+    color: #fffa;
     text-decoration: none;
     border-bottom: 1px solid #222;
 }
@@ -836,8 +834,8 @@ footer p {
 
     & p {
         font-size: .8rem;
-        text-align: center;
         line-height: 15px;
+        text-align: center;
     }
 }
 
@@ -879,11 +877,14 @@ footer p {
 
     display: flex;
     flex-direction: column;
+
+    & path {
+        fill: #fffa;
+    }
 }
 
 .--footer-contact span {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 5px;
 
@@ -894,6 +895,10 @@ footer p {
     grid-area: footer-social;
     padding-left: 25px;
     border-left: 1px solid #222;
+
+    & h6 {
+        text-align: center;
+    }
 }
 
 .--footer-social__icons {
@@ -930,7 +935,7 @@ footer p {
 }
 
 .--footer-legal div a {
-    color: inherit;
+    color: #fffa;
     text-decoration: none;
 }
 
@@ -944,7 +949,7 @@ footer p {
     align-items: center;
 
     text-decoration: none;
-    color: inherit;
+    color: #fffa;
 }
 
 .--footer-legal__heart{
