@@ -150,14 +150,15 @@ tbody tr th {
 }
 
 .sub-grupos-main__content h6 {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: .9rem;
-    color: #000a;
+    color: #000;
 }
 
 .sub-grupos-main__content p {
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: .9rem;
+    margin-top: 5px;
+    color: #000a;
 }
 
 .sub-grupos-main__content__esport-salut-familia {
@@ -191,6 +192,8 @@ tbody tr th {
 #comienzo-clases {
     font-size: .8rem;
     font-weight: 600;
+    color: #000;
+    margin-top: 20px;
 }
 
 .sub-grupos-main__content-button-1,
