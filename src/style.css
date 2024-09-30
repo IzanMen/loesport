@@ -328,6 +328,7 @@ p {
     max-width: 1200px;
     margin: auto;
     height: 500px;
+    margin-top: 50px;
 
     display: flex;
     flex-direction: column;
@@ -338,6 +339,8 @@ p {
 
 .global-grupos h4 {
     color: #0008;
+    text-align: center;
+    position: relative;
 }
 
 .global-grupos h2 {
@@ -494,7 +497,6 @@ p {
 .global-grupos__nav-item--active p {
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
-    font-size: 1.2rem;
 }
 
 .global-grupos__nav-item--active ul {
@@ -541,10 +543,9 @@ p {
 
 @media screen and (max-width: 1000px) {
     .global-grupos {
-        height: 700px;
-        margin-bottom: 200px;
+        height: fit-content;
     }
-
+    
     .global-grupos__nav {
         flex-direction: column;
     }
@@ -610,7 +611,7 @@ p {
     width: 80%;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
 
     display: flex;
     justify-content: space-between;
@@ -740,7 +741,7 @@ textarea {
     .global-contacto {
         flex-direction: column;
         text-align: center;
-        margin-top: 170px;
+        margin-top: 350px;
     }
 
     .global-contacto div form button[type="submit"] {
@@ -754,6 +755,12 @@ textarea {
 
     .global-contacto {
         gap: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .global-contacto {
+        margin-top: 400px;
     }
 }
 
@@ -796,13 +803,14 @@ footer p {
     font-size: inherit;
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: center;
     color: #fff;
 }
 
 .--footer-logo {
     grid-area: footer-logo;
     padding-right: 25px;
-
+    margin: auto;
     width: 220px;
 }
 
@@ -814,8 +822,8 @@ footer p {
 
 .--footer-nav__list {
     list-style: none;
-
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
 }

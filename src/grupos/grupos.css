@@ -1,3 +1,9 @@
+/* HEADER MAIN */
+
+.main-global-header {
+    margin-bottom: 150px;
+}
+
 /* Grupos Gestiones */
 
 .grupos-gestiones {
@@ -59,6 +65,12 @@
 
 /* Grupos Gestiones -- MEDIA QUERIES */
 
+@media screen and (max-width: 1000px) {
+    .grupos-gestiones {
+        margin-top: 250px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .grupos-gestiones {
         flex-direction: column;
@@ -72,10 +84,6 @@
 }
 
 @media screen and (max-width: 450px) {
-    .grupos-gestiones {
-        margin-top: 120px;
-    }
-
     .grupos-gestiones__item {
         flex-direction: column;
         justify-content: center;
