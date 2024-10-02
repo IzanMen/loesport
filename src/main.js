@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const groupPages = ['alaior', 'mahon', 'mercadal'];
 
     groupPages.forEach(page => {
-        const navItems = document.querySelectorAll(`#${page}-button-escolares, #${page}-button-iniciacion, #${page}-button-benjamin-alevin, #${page}-button-infantil-cadete, #${page}-button-adultos-1, #${page}-button-adultos-2, #${page}-button-womens, #${page}-button-esport-salut-familia`);
-        const contentDivs = document.querySelectorAll(`#${page}-escolares, #${page}-iniciacion, #${page}-benjamin-alevin, #${page}-infantil-cadete, #${page}-adultos-1, #${page}-adultos-2, #${page}-womens, #${page}-esport-salut-familia`);
+        const navItems = document.querySelectorAll(`#${page}-button-escolares, #${page}-button-iniciacion, #${page}-button-benjamin, #${page}-button-alevin, #${page}-button-infantil-cadete, #${page}-button-benjamin-alevin, #${page}-button-infantil-cadete, #${page}-button-adultos-1, #${page}-button-adultos-2, #${page}-button-womens, #${page}-button-esport-salut-familia`);
+        const contentDivs = document.querySelectorAll(`#${page}-escolares, #${page}-iniciacion, #${page}-benjamin, #${page}-alevin, #${page}-infantil-cadete, #${page}-adultos-1, #${page}-benjamin-alevin, #${page}-adultos-2, #${page}-womens, #${page}-esport-salut-familia`);
 
         navItems.forEach((item, index) => {
             item.addEventListener('click', () => {
