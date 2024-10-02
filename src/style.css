@@ -374,6 +374,7 @@ p {
     align-items: center;
 
     transition: all .5s;
+    interpolate-size: allow-keywords;
 } 
 
 .global-grupos__nav-item div {
@@ -553,7 +554,7 @@ p {
     .global-grupos__nav-item {
         width: 100%;
         max-width: 100%;
-        height: fit-content;
+        height: auto;
         flex-direction: row-reverse;
     }
 
