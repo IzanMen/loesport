@@ -345,6 +345,7 @@ p {
 
 .global-grupos h2 {
     text-align: center;
+    font-weight: 600;
 }
 
 .global-grupos__nav {
@@ -374,7 +375,6 @@ p {
     align-items: center;
 
     transition: all .5s;
-    interpolate-size: allow-keywords;
 } 
 
 .global-grupos__nav-item div {
@@ -856,6 +856,7 @@ footer p {
     display: flex;
     flex-direction: column; 
     gap: 10px;
+    text-decoration: none;
 
     width: 100px;
 }
@@ -869,6 +870,7 @@ footer p {
     display: flex;
     flex-direction: column; 
     gap: 10px;
+    text-decoration: none;
 
     width: 100px;
 }
@@ -892,10 +894,11 @@ footer p {
     }
 }
 
-.--footer-contact span {
+.--footer-contact a {
     display: flex;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
 
     height: 25px;
 }

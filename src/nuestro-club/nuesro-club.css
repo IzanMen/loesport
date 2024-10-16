@@ -65,11 +65,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 20px;
 }
 
 .club-entrenadores__content div {
-    width: calc(25% - 8px);
+    width: calc(25% - 15px);
     height: 400px;
     color: #fff;
 
@@ -90,7 +89,7 @@
 .club-entrenadores__content div h6 {
     font-size: 1rem;
     margin-top: 17px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .club-entrenadores__content div p {
@@ -98,7 +97,7 @@
     font-size: .7rem;
     font-weight: 200;
     line-height: .8rem;
-    color: #fffc;
+    color: #fff8;
 }
 
 /* Nuestro club - Entrenadres -- MEDIA QUERIES */

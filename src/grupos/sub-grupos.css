@@ -95,6 +95,7 @@
 .sub-grupos-main__content h5 {
     font-size: 1.3rem;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .sub-grupos-main__content table {
@@ -116,7 +117,7 @@
 }
 
 .sub-grupos-main__content table tbody tr th {
-    width: 200px;
+    width: 245px;
 }
 
 th, tr, td {
