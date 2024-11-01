@@ -117,7 +117,7 @@
 }
 
 .sub-grupos-main__content table tbody tr th {
-    width: 245px;
+    width: auto;
 }
 
 th, tr, td {
@@ -130,6 +130,7 @@ th, tr, td {
 td {
     border-left: 1px solid #0003;
     font-weight: 700;
+    width: 130px;
 }
 
 thead tr th {
