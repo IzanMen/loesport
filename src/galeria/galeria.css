@@ -1,7 +1,7 @@
 /* Galeria - Galeria */
 
 main div {
-    width: 80%;
+    width: 95%;
     max-width: 1200px;
     margin: auto;
 
@@ -9,6 +9,8 @@ main div {
     grid-template-columns: repeat(5, 1fr);
     gap: 18px;
     grid-auto-flow: dense;
+
+    margin-top: 50px;
 }
 
 main div img {

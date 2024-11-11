@@ -1,6 +1,6 @@
 
 .sub-grupos-main {
-    width: 80%;
+    width: 95%;
     max-width: 1200px;
     margin: auto;
     margin-bottom: 150px;
@@ -85,7 +85,7 @@
 
 .sub-grupos-main__content {
     border: 1px solid #dfdfdf;
-    padding: 30px;
+    padding: 25px 15px;
     display: none;
     width: 100%;
 
@@ -135,7 +135,6 @@ td {
 
 thead tr th {
     border-bottom: 1px solid #0003;
-    border-left: 1px solid #0003;
     padding-bottom: 7px;
 }
 

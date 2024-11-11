@@ -1,7 +1,7 @@
 /* Contact Content */
 
 .contacto-content {
-    width: 80%;
+    width: 95%;
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
@@ -29,9 +29,12 @@
 }
 
 .contacto-content__equipo div {
+    min-width: 250px;
+    max-width: 100%;
     width: calc(25% - 15px);
+    flex-grow: 1;
+    
     padding-bottom: 10px;
-    min-width: 200px;
     color: #000;
     border: 1px solid #0003;
 
@@ -89,4 +92,10 @@
 
 .global-contacto {
     margin-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .global-contacto {
+        margin-top: 50px;
+    }
 }
