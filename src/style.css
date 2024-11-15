@@ -44,7 +44,6 @@ p {
     font-size: .9rem;
     text-wrap: pretty;
     line-height: 20px;
-    max-width: 100vw !important;
 }
 
 :root {
