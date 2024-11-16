@@ -355,11 +355,11 @@
 
 @media screen and (max-width: 384px) {
     .index-header__column-1__social {
-        top: 750px;
+        top: 700px;
     }
 
     .index-header__column-1__button {
-        top: 700px;
+        top: 670px;
     }
 }
 
@@ -372,20 +372,6 @@
 @media screen and (max-width: 328px) {
     .index-header {
         padding-bottom: 190px;
-    }
-
-    .index-header__column-1__social {
-        top: 750px;
-    }
-
-    .index-header__column-1__button {
-        top: 700px;
-    }
-}
-
-@media screen and (max-width: 284px) {
-    .index-header {
-        padding-bottom: 150px;
     }
 
     .index-header__column-1__social {
@@ -977,7 +963,7 @@
 
 .index-gestiones__licencias-item__content p {
     color: #000a;
-    width: 400px;
+    max-width: 400px;
 }
 
 .index-gestiones__licencias-item__content span {

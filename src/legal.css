@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue';
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1, h2 {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: .9rem;
+    text-wrap: pretty;
+    line-height: 20px;
+    color: #000a;
+    margin-bottom: 40px;
+}

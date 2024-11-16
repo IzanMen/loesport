@@ -1033,3 +1033,70 @@ footer p {
         }
     }
 }
+
+/* MODAL COOKIES */
+
+.modal-cookies {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-cookies__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 500px;
+    max-width: 95%;
+    background-color: #fff;
+    padding: 70px 30px;
+}
+
+.modal-cookies__container img {
+    width: 50px;
+}
+
+.modal-cookies__container h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.modal-cookies__container p {
+    color: #0008;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.modal-cookies__container button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+
+    cursor: pointer;
+}
+
+.modal-cookies__container-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: .7rem;
+}

@@ -183,3 +183,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Modal cookies
+
+const modalCookies = document.querySelector('.modal-cookies');
+
+modalCookies.addEventListener('click', (e) => {
+    modalCookies.style.display = 'none';
+});
