@@ -190,16 +190,16 @@
         <div>
             <h4>Contáctanos</h4>
             <h2>¡Ponte en contacto con nosotros!</h2>
-            <form action="">
+            <form action="../send-mail.php" method="POST">
                 <label>
                     <svg width="64" height="64" viewBox="0 0 24 24" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line" stroke="#000"><path d="m12.55 14.63 6.9-4.63a1 1 0 0 1 1.55.83V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.13A1 1 0 0 1 4.55 10l6.9 4.59a1 1 0 0 0 1.1.04Z" style="fill:#000;stroke-width:2"/><path d="M6 11V3h12v8l-5.45 3.63a1 1 0 0 1-1.1 0Zm5.45 3.63L4.55 10a1 1 0 0 0-1.55.87V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.13a1 1 0 0 0-1.55-.87l-6.9 4.59a1 1 0 0 1-1.1.04Z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg>
-                    <input type="text" placeholder="Asunto">
+                    <input type="text" name="asunto" placeholder="Asunto">
                 </label>
                 <label>
                     <svg width="64" height="64" viewBox="0 0 24 24" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><path d="m20.61 5.23-8 6.28a1 1 0 0 1-1.24 0l-8-6.28A1 1 0 0 0 3 6v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6a1 1 0 0 0-.39-.77Z" style="fill:#000;stroke-width:2"/><path d="M20 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1Zm0-14H4a1 1 0 0 0-.62.22l8 6.29a1 1 0 0 0 1.24 0l8-6.29A1 1 0 0 0 20 5Z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg>                    
-                    <input type="email" placeholder="Correo electrónico">
+                    <input type="email" name="email" placeholder="Correo electrónico">
                 </label>
-                <textarea placeholder="Escriba su mensaje..."></textarea>
+                <textarea name="content" placeholder="Escriba su mensaje..."></textarea>
                 <button type="submit"> 
                     Enviar
                     <svg class="global-contacto__submit-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 17 17 7m0 0H8m9 0v9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -270,6 +270,20 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-cookies">
+        <div class="modal-cookies__container">
+            <img src="../img/iconos/cookie.webp" alt="cookie">
+            <h6>¡Cookies!</h6>
+            <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. si continúa navegando, consideramos que acepta su uso. Puede obtener más información en nuestra Política de Cookies</p>
+            <button class="modal-cookies__button">Aceptar</button>
+            <div class="modal-cookies__container-links">
+                <a href="politica-de-privacidad/" target="_blank">Política de privacidad</a>
+                <a href="politica-de-cookies/" target="_blank">Política de cookies</a>
+                <a href="terminos-y-condiciones-de-uso/" target="_blank">Términos y condiciones de uso</a>
+            </div>
+        </div>
+    </div>
     <script src="../main.js"></script>
 </body>
 </html>

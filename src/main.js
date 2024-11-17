@@ -187,7 +187,14 @@ document.addEventListener("DOMContentLoaded", function() {
 // Modal cookies
 
 const modalCookies = document.querySelector('.modal-cookies');
+const buttonmodalCookies = document.querySelector('.modal-cookies__button');
 
-modalCookies.addEventListener('click', (e) => {
+if (localStorage.getItem('cookiesAccepted') === 'true') {
     modalCookies.style.display = 'none';
-});
+} else {
+    buttonmodalCookies.addEventListener('click', (e) => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        modalCookies.style.display = 'none';
+    });
+}
+
