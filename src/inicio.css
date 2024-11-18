@@ -479,8 +479,8 @@
 
 .index-historia-patrocinadores__historia-imagen {
     object-fit: cover;
-    width: 700px;
-    height: auto;
+    width: 1300px;
+    height: 300px;
 }
 
 .index-historia-patrocinadores__patrocinadores {
@@ -515,7 +515,18 @@
 }
 
 .index-historia-patrocinadores__patrocinadores-targetas img {
-    height: 50px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.index-historia-patrocinadores__patrocinadores-targetas .goñalons-container {
+    background-color: #fffd;
+    color: #000;
+}
+
+.index-historia-patrocinadores__patrocinadores-targetas .goñalons {
+    margin-bottom: -30px;
+    width: 150px;
 }
 
 .index-historia-patrocinadores__patrocinadores-targetas span {

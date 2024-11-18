@@ -28,6 +28,19 @@
     flex-wrap: wrap;
 }
 
+.patrocinadores-actual__content-black {
+    background-color: #000d !important;
+}
+
+.patrocinadores-actual__content-black h4 {
+    color: #fff !important;
+}
+
+.goñalons {
+    width: 90px !important;
+    margin-bottom: -20px;
+}
+
 .patrocinadores-actual a {
     display: flex;
     justify-content: space-between;

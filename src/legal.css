@@ -29,12 +29,18 @@ h1 {
 h2 {
     font-size: 1.7rem;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-p {
-    font-size: .9rem;
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    line-height: 2rem;
     text-wrap: pretty;
-    line-height: 20px;
     color: #000a;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
