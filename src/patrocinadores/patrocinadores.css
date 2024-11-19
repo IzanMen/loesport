@@ -58,6 +58,10 @@
     width: 70px;
 }
 
+.aj-alaior-small {
+    width: 55px !important;
+}
+
 .patrocinadores-actual__img-sharpalai {
     width: 100px !important;
 }
@@ -103,7 +107,7 @@
     }
 
     .patrocinadores-actual a {
-        width: 100%;
+        max-width: 100%;
         height: fit-content;
         padding: 20px;
         margin: auto;

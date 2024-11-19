@@ -73,7 +73,8 @@ p {
 }
 
 .header__logo {
-    width: 150px;
+    width: 80px;
+    margin-top: -8px;
 }
 
 .header__nav {
@@ -148,10 +149,6 @@ p {
     .header__nav {
         gap: 60px;
     }
-
-    .header__logo  {
-        width: 120px;
-    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -163,7 +160,7 @@ p {
 @media screen and (max-width: 1025px) {
 
     .header__logo {
-        width: 150px;
+        width: 100px;
     }
 
     .--item-mobile-menu {
@@ -815,7 +812,7 @@ footer p {
     grid-area: footer-logo;
     padding-right: 25px;
     margin: auto;
-    width: 220px;
+    width: 100px;
 }
 
 .--footer-nav {

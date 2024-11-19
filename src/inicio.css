@@ -519,9 +519,17 @@
     object-fit: contain;
 }
 
-.index-historia-patrocinadores__patrocinadores-targetas .goñalons-container {
-    background-color: #fffd;
-    color: #000;
+.index-historia-patrocinadores__patrocinadores-targetas__consell {
+    width: 70px !important;
+}
+
+.index-historia-patrocinadores__patrocinadores-targetas__ajuntament {
+    width: 50px !important;
+}
+
+.index-historia-patrocinadores__patrocinadores-targetas__white {
+    background-color: #fffd !important;
+    color: #000 !important;
 }
 
 .index-historia-patrocinadores__patrocinadores-targetas .goñalons {
