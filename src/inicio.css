@@ -29,9 +29,9 @@
 
 .index-header__column-1__background-image img {
     position: absolute;
-    width: 140px;
-    top: -30px;
-    right: 0;
+    width: 120px;
+    top: -40px;
+    right: 10px;
 }
 
 .index-header__column-1__button {
@@ -662,6 +662,11 @@
     .index-historia-patrocinadores__patrocinadores-targetas img,
     .index-historia-patrocinadores__patrocinadores-targetas :first-child img {
         height: 100%;
+    }
+
+    
+    .index-historia-patrocinadores__patrocinadores-targetas__white {
+        background-color: transparent;
     }
 }
 
