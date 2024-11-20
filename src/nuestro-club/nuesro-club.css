@@ -84,8 +84,9 @@
 
 .club-entrenadores__content div img {
     width: 100%;
-    height: 90%;
+    height: 340px;
     object-fit: cover;
+    object-position: top;
 
     filter: grayscale(1);
 }
