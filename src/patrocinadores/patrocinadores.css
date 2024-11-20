@@ -108,11 +108,8 @@
     }
 
     .patrocinadores-actual a {
-        max-width: 100%;
         height: fit-content;
         padding: 20px;
-        margin: auto;
-
         display: flex;
         flex-direction: column;
         gap: 10px;
