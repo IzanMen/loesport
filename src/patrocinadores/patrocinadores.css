@@ -37,8 +37,8 @@
     color: #fff !important;
 }
 
-.goñalons {
-    width: 90px !important;
+#goñalons {
+    width: 90px;
     margin-bottom: -20px;
 }
 
@@ -118,14 +118,18 @@
         justify-content: center;
     }
 
-    .goñalons {
-        width: 180px !important;
+    .patrocinadores-actual a #goñalons {
+        width: 180px;
+        margin-bottom: -40px;
     }
-}
 
-@media screen and (max-width: 440px) {
-    .patrocinadores-actual a {
-        width: 95% !important;
+    #cime {
+        width: 130px;
+        margin-bottom: 10px;
+    }
+
+    .patrocinadores-actual__content {
+        width: 95%;
     }
 }
 
