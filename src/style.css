@@ -880,6 +880,20 @@ footer p {
     margin: auto;
 }
 
+.--footer-institutions__ib {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    text-decoration: none;
+
+    width: 100px;
+}
+
+.--footer-institutions__ib img {
+    width: 35px;
+    margin: auto;
+}
+
 .--footer-contact {
     grid-area: footer-contact;
     padding: 0 25px;
