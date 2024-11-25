@@ -97,14 +97,6 @@
     font-weight: 600;
 }
 
-.club-entrenadores__content div p {
-    margin-top: 5px;
-    font-size: .7rem;
-    font-weight: 200;
-    line-height: .8rem;
-    color: #fff8;
-}
-
 /* Nuestro club - Entrenadres -- MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {
