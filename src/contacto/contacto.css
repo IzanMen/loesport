@@ -23,6 +23,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -40,6 +41,10 @@
     flex-direction: column;
 
     margin-top: 20px;
+}
+
+.contacto-content__equipo div {
+    flex-grow: 1;
 }
 
 .contacto-content__equipo-lucien {
@@ -100,5 +105,11 @@
 @media screen and (max-width: 800px) {
     .global-contacto {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .contacto-content__equipo-lucien {
+        width: 100%;
     }
 }
