@@ -15,15 +15,15 @@ $mail = new PHPMailer(true);
 try {
     // Configuración SMTP
     $mail->isSMTP();
-    $mail->Host = 'smtp.buzondecorreo.com';
+    $mail->Host = 'smtp.dondominio.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'formulari@loesport.es';
-    $mail->Password = '_Caca1234';
+    $mail->Username = 'contacto@loesport.es';
+    $mail->Password = ')r]7SlP6Xo6k/c';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
     // Destinatario y remitente
-    $mail->setFrom('formulari@loesport.es');
+    $mail->setFrom('contacto@loesport.es');
     $mail->addAddress('sanchezginesizan@gmail.com');  
 
     // Contenido del correo
@@ -68,9 +68,9 @@ try {
                     <h2>Mensaje del formulario WEB</h2>
                 </header>
                 <section class='content'>
-                    <p><span>Remitente:</span>$email</p>
-                    <span>Mensaje:</span>
-                    <p>$content</p>
+                    <p><span>Remitente: </span>$email</p>
+                    <p><span>Asunto: </span>$asunto</p>
+                    <p><span>Mensaje: </span>$mensaje</p>
                 </section>
             </div>
         </body>
@@ -254,7 +254,7 @@ try {
 
         modalButton.addEventListener('click', () => {
             modal.style.display = 'none';
-            window.location.href = '<?php echo $_POST['referer']; ?>' || 'http://loesport.vercel.app/';
+            window.location.href = '<?php echo $_POST['referer']; ?>' || 'http://loesport.es/';
         });
     </script>
 </body>
