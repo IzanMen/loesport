@@ -44,12 +44,12 @@ try {
                 .container {
                     max-width: 600px;
                     margin: auto;
-                    background-color: #ff1a;
+                    background-color: #d8e472;
                     padding: 0;
                     border-radius: 10px;
                 }
                 header {
-                    background-color: #8DE0F1;
+                    background-color: #418e8e;
                     text-align: center;
                     padding: 20px;
                     border-radius: 10px 10px 0 0;
@@ -70,7 +70,7 @@ try {
                 <section class='content'>
                     <p><span>Remitente: </span>$email</p>
                     <p><span>Asunto: </span>$asunto</p>
-                    <p><span>Mensaje: </span>$mensaje</p>
+                    <p><span>Mensaje: </span>$content</p>
                 </section>
             </div>
         </body>
