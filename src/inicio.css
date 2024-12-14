@@ -1,4 +1,27 @@
 /* HEADER */
+.main-background-img {
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center -300px;
+    left: 0;
+    right: 0;
+    filter: brightness(.3);
+    margin: auto;
+}
+
+@media screen and (max-width: 1025px) {
+    .main-background-img {
+        top: 90px;
+    }
+}
+
+h1 {
+    color: #fff;
+}
 
 .index-header {
     padding: 100px 0;
@@ -23,7 +46,7 @@
 .index-header__column-1__background-image {
     height: 200px;
     width: 150px;
-    background-color: #262626;
+    background-color: #ccc;
     position: relative;
 }
 
@@ -35,8 +58,8 @@
 }
 
 .index-header__column-1__button {
-    color: #000;
-    border: 1px solid #ccc;
+    color: #fff;
+    border: 1px solid #aaa;
     border-radius: 100px;
     text-decoration: none;
     font-weight: 700;
@@ -75,6 +98,7 @@
 
 .index-header__column-1__social p {
     font-size: .7rem;
+    color: #fff;
 }
 
 .index-header__column-1__social-line {
@@ -120,7 +144,7 @@
 .index-header__column-2 p {
     margin: 0 auto;
     max-width: 550px;
-    color: #000a;
+    color: #fffa;
     line-height: 1.6rem;
 }
 
@@ -142,8 +166,8 @@
 }
 
 .index-header__column-2__buttons-1 {
-    background-color: #010101;
-    color: #fff;
+    background-color: #f1f1f1;
+    color: #000;
 
     transition: transform .2s;
 }
@@ -154,7 +178,7 @@
 
 .index-header__column-2__buttons-2 {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     gap: 2px;
 }
 
@@ -185,7 +209,7 @@
     position: relative;
     overflow: hidden;
     background-color: var(--yellow);
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -238,6 +262,10 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .main-background-img {
+        height: 1200px !important;
+    }
+
     .index-header {
         flex-direction: column;
         padding-bottom: 200px;
@@ -408,11 +436,11 @@
 }
 
 .index-header__column-1__button:hover {
-    color: #fff;
+    color: #000;
 }
 
 .index-header__column-1__button:hover svg path {
-    stroke: #fff;
+    stroke: #000;
 }
 
 /* SECTION 2 */
