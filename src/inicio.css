@@ -1,3 +1,15 @@
+.main-img-principal {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 /* HEADER */
 .main-background-img {
     position: absolute;
@@ -31,6 +43,7 @@ h1 {
     flex-wrap: wrap; 
     width: 95%;
     max-width: 1200px;
+    position: relative;
 }
 
 .index-header__column {
@@ -93,7 +106,7 @@ h1 {
     align-items: center;
     gap: 10px;
     position: absolute;
-    top: 410px;
+    top: 350px;
 }
 
 .index-header__column-1__social p {
@@ -277,7 +290,7 @@ h1 {
 
     .index-header__column-1__social {
         position: absolute;
-        top: 620px;
+        top: 570px;
         justify-content: center;
         left: 0;
         right: 0;
@@ -286,7 +299,7 @@ h1 {
 
     .index-header__column-1__button {
         position: absolute;
-        top: 590px;
+        top: 540px;
         left: 0;
         right: 0;
         margin: auto;
@@ -316,21 +329,21 @@ h1 {
 
 @media screen and (max-width: 1025px) {
     .index-header__column-1__social {
-        top: 650px;
+        top: 600px;
     }
 
     .index-header__column-1__button {
-        top: 620px;
+        top: 570px;
     }
 }
 
 @media screen and (max-width: 540px) {
     .index-header__column-1__social {
-        top: 720px;
+        top: 660px;
     }
 
     .index-header__column-1__button {
-        top: 680px;
+        top: 630px;
     }
 }
 
@@ -373,21 +386,21 @@ h1 {
     }
 
     .index-header__column-1__social {
-        top: 670px;
+        top: 610px;
     }
 
     .index-header__column-1__button {
-        top: 630px;
+        top: 580px;
     }
 }
 
 @media screen and (max-width: 384px) {
     .index-header__column-1__social {
-        top: 700px;
+        top: 640px;
     }
 
     .index-header__column-1__button {
-        top: 670px;
+        top: 610px;
     }
 }
 
@@ -403,11 +416,11 @@ h1 {
     }
 
     .index-header__column-1__social {
-        top: 750px;
+        top: 680px;
     }
 
     .index-header__column-1__button {
-        top: 700px;
+        top: 650px;
     }
 }
 
