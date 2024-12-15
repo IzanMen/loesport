@@ -1,13 +1,27 @@
-.main-img-principal {
+.main-top {
+    height: calc(170vh - 70px);
     width: 100%;
-    height: 400px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(img/galeria/galeria-3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 100px;
+    filter: brightness(.5);
+    z-index: -1;
+}
+
+.main-h1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
     margin: auto;
-    object-fit: cover;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    z-index: 10;
 }
 
 /* HEADER */
@@ -133,7 +147,7 @@ h1 {
     position: relative;
 }
 
-.index-header__column-2 h1 {
+.index-header__column-2 h2 {
     font-weight: 400;
     font-size: 2.8rem;
 }

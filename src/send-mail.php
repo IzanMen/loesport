@@ -28,6 +28,7 @@ try {
 
     // Contenido del correo
     $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
     $mail->Subject = $asunto;
     $mail->Body = "
         <!DOCTYPE html>
