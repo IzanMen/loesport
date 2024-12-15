@@ -25,29 +25,6 @@
 }
 
 /* HEADER */
-.main-background-img {
-    position: absolute;
-    top: 70px;
-    z-index: -1;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center -300px;
-    left: 0;
-    right: 0;
-    filter: brightness(.3);
-    margin: auto;
-}
-
-@media screen and (max-width: 1025px) {
-    .main-background-img {
-        top: 90px;
-    }
-}
-
-h1 {
-    color: #fff;
-}
 
 .index-header {
     padding: 100px 0;
@@ -73,7 +50,7 @@ h1 {
 .index-header__column-1__background-image {
     height: 200px;
     width: 150px;
-    background-color: #ccc;
+    background-color: #333;
     position: relative;
 }
 
@@ -85,7 +62,7 @@ h1 {
 }
 
 .index-header__column-1__button {
-    color: #fff;
+    color: #000;
     border: 1px solid #aaa;
     border-radius: 100px;
     text-decoration: none;
@@ -125,7 +102,7 @@ h1 {
 
 .index-header__column-1__social p {
     font-size: .7rem;
-    color: #fff;
+    color: #000;
 }
 
 .index-header__column-1__social-line {
@@ -171,7 +148,7 @@ h1 {
 .index-header__column-2 p {
     margin: 0 auto;
     max-width: 550px;
-    color: #fffa;
+    color: #000a;
     line-height: 1.6rem;
 }
 
@@ -193,8 +170,8 @@ h1 {
 }
 
 .index-header__column-2__buttons-1 {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #010101;
+    color: #fff;
 
     transition: transform .2s;
 }
@@ -205,7 +182,7 @@ h1 {
 
 .index-header__column-2__buttons-2 {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     gap: 2px;
 }
 
@@ -236,7 +213,6 @@ h1 {
     position: relative;
     overflow: hidden;
     background-color: var(--yellow);
-    color: #fff;
     text-decoration: none;
 }
 
