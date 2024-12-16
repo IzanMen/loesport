@@ -1,5 +1,5 @@
 .main-top {
-    height: calc(170vh - 70px);
+    height: calc(170dvh - 70px);
     width: 100%;
     background-image: url(img/galeria/galeria-3.webp);
     background-size: cover;
