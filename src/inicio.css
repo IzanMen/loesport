@@ -1,7 +1,7 @@
 .main-top {
-    height: calc(170dvh - 70px);
+    height: 100dvh;
     width: 100%;
-    background-image: url(img/galeria/galeria-3.webp);
+    background-image: url(img/inicio/main-header-inicio.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,6 +22,22 @@
     font-size: 3rem;
     color: #fff;
     z-index: 10;
+    padding: 0 50px;
+}
+
+@media screen and (min-width: 1450px) {
+    .main-top {
+        height: calc(170dvh - 70px);
+        width: 100%;
+        background-image: url(img/inicio/main-header-inicio.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin-bottom: 100px;
+        filter: brightness(.5);
+        z-index: -1;
+    }
 }
 
 /* HEADER */
@@ -876,6 +892,12 @@
 }
 
 /* SECTION 3 -- MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+    .index-gestiones__sections-2 img {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1140px) {
     .index-gestiones__sections-1,
