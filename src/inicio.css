@@ -1,11 +1,10 @@
 .main-top {
-    height: 100dvh;
+    height: calc(100dvh - 70px);
     width: 100%;
     background-image: url(img/inicio/main-header-inicio.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     margin-bottom: 100px;
     filter: brightness(.5);
     z-index: -1;
@@ -22,22 +21,6 @@
     font-size: 3rem;
     color: #fff;
     z-index: 10;
-    padding: 0 50px;
-}
-
-@media screen and (min-width: 1450px) {
-    .main-top {
-        height: calc(170dvh - 70px);
-        width: 100%;
-        background-image: url(img/inicio/main-header-inicio.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        margin-bottom: 100px;
-        filter: brightness(.5);
-        z-index: -1;
-    }
 }
 
 /* HEADER */
