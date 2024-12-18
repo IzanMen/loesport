@@ -1,7 +1,7 @@
 .top-container {
     margin-top: 70px;
     position: relative;
-    height: 1000px;
+    height: 130vh;
 }
 
 .top-image {
@@ -9,6 +9,7 @@
     margin-bottom: 50px;
     filter: brightness(.5);
     z-index: -1;
+    object-fit: cover;
 
     position: fixed;
     top: 0;
