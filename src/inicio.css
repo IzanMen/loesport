@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     filter: brightness(.5);
     z-index: -1;
 }
