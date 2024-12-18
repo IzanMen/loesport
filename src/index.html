@@ -66,6 +66,19 @@
     <div class="top-container">
         <div class="top-image"></div>
         <h1 class="top-h1">Bienvenidos a <br>Lô Esport Menorca</h1>    
+        <script>
+            const element = document.querySelector('.top-image');  
+            const threshold = 2 * window.innerHeight;  
+    
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= threshold) {
+                    element.style.filter = 'opacity(0)';  
+                } else {
+                    element.style.filter = 'opacity(1)';  
+                    element.style.filter = 'brightness(.5)'; 
+                }
+            });
+        </script>
     </div>
 
     <main>
