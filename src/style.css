@@ -69,6 +69,7 @@ p {
     border-bottom: 1px solid #0002;
     color: #000a;
     font-weight: 600;
+    background-color: #fff;
 }
 
 .header__nav__list-item .active {
