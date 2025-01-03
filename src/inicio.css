@@ -5,7 +5,7 @@
 }
 
 .top-image {
-    background: url(img/inicio/main-header-inicio.webp) no-repeat center center;
+    background: url(img/inicio/homeheader.webp) no-repeat center center;
     margin-bottom: 50px;
     filter: brightness(.5);
     z-index: -1;
