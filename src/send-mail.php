@@ -24,7 +24,7 @@ try {
 
     // Destinatario y remitente
     $mail->setFrom('contacto@loesport.es');
-    $mail->addAddress('loesport@gmail.com');  
+    $mail->addAddress('sanchezginesizan@gmail.com');  
 
     // Contenido del correo
     $mail->isHTML(true);
