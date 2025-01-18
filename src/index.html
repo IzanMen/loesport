@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="inicio.css">
     <link rel="icon" href="/img/logos/favicon.webp">
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeVZLsqAAAAAGR0120YXgc8OH2zspQzmzJWH98m"></script>
+
 </head>
 <body>
     <header class="header">
@@ -422,7 +425,7 @@
         <div>
             <h4>Contáctanos</h4>
             <h2>¡Ponte en contacto con nosotros!</h2>
-            <form action="send-mail.php" method="POST">
+            <form action="send-mail.php" method="POST" id="demo-form">
                 <label>
                     <svg width="64" height="64" viewBox="0 0 24 24" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line" stroke="#000"><path d="m12.55 14.63 6.9-4.63a1 1 0 0 1 1.55.83V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.13A1 1 0 0 1 4.55 10l6.9 4.59a1 1 0 0 0 1.1.04Z" style="fill:#000;stroke-width:2"/><path d="M6 11V3h12v8l-5.45 3.63a1 1 0 0 1-1.1 0Zm5.45 3.63L4.55 10a1 1 0 0 0-1.55.87V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.13a1 1 0 0 0-1.55-.87l-6.9 4.59a1 1 0 0 1-1.1.04Z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg>
                     <input type="text" name="asunto" placeholder="Asunto">
@@ -432,7 +435,17 @@
                     <input type="email" name="email" placeholder="Correo electrónico">
                 </label>
                 <textarea name="content" placeholder="Escriba su mensaje..."></textarea>
-                <button type="submit"> 
+                <script>
+                    function onSubmit(token) {
+                      document.getElementById("demo-form").submit();
+                    }
+                 </script>
+                <button 
+                type="submit" 
+                class="g-recaptcha" 
+                data-sitekey="6LeVZLsqAAAAAGR0120YXgc8OH2zspQzmzJWH98m"
+                data-callback='onSubmit'
+                data-action='submit'> 
                     Enviar
                     <svg class="global-contacto__submit-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 17 17 7m0 0H8m9 0v9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
