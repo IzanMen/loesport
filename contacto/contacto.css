@@ -23,14 +23,17 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     flex-wrap: wrap;
     gap: 10px;
+    margin: auto;
 }
+
 
 .contacto-content__equipo div, .contacto-content__equipo-lucien {
     min-width: 250px;
     width: calc(25% - 15px);
+    max-width: calc(25% - 15px); /* Añadido para mantener el ancho fijo */
     height: 430px;
     
     padding-bottom: 10px;
@@ -44,11 +47,12 @@
 }
 
 .contacto-content__equipo div {
-    flex-grow: 1;
+    flex-grow: 0; /* Cambiado de 1 a 0 */
+    flex-shrink: 0; /* Añadido para evitar que se encoja */
 }
 
 .contacto-content__equipo-lucien {
-    margin: auto;
+    margin: auto; /* Mantiene a Lucien centrado */
     height: 480px;
 }
 
@@ -112,5 +116,11 @@
 @media screen and (max-width: 536px) {
     .contacto-content__equipo-lucien {
         width: 100%;
+        max-width: 100%;
+    }
+    
+    .contacto-content__equipo div {
+        width: 100%;
+        max-width: 100%;
     }
 }
